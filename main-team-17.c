@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include"functions-team-17.h"
 #include<stdio.h>
-#include<locale.h>
+#include<locale.h> //este header permite meter acentos e outras coisas da língua portuguesa
 #include<string.h>
 int main(int argc,char *argv[]){
     int x=14;
@@ -28,6 +28,9 @@ int main(int argc,char *argv[]){
         break;
     case 4:
         task4(a, 14);
+        break;
+    case 5:
+        printf("O valor médio de todos os elementos do vector é %f\n", averageArray(a,x));
         break;
     
     default:
