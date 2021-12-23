@@ -71,3 +71,15 @@ void task3(int a[], int x){
     }
 }
 
+float averagearray(int v[],int x)//Função que calcula a média de todos os valores num array
+{
+    int somtotal=0;
+    
+    for(int i=0;i<x;i++)
+    {
+        somtotal=somtotal+v[i];
+    }
+    float media=((float)somtotal)/x;
+
+    return media;
+}

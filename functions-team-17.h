@@ -5,3 +5,4 @@ void print1dim(int a[], int x); //suplementar para imprimir arrays de uma dimens
 int min(int a[], int x, int y, int z); //suplementar para a task 3
 int find(int a[], int x, int y, int z, int w); //suplementar para encontrar o primeiro elemento igual a w
 void task3(int a[], int x); //Artur
+float averagearray(int v[],int x);//Tiago-Exercício 5 da primeira metade
