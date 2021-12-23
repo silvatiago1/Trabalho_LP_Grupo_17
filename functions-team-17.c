@@ -60,4 +60,14 @@ int find(int a[], int x, int y, int z, int w){ //devolve o índice do primeiro e
         }
     }
 }
+void task3(int a[], int x){
+    int k,l;
+    for(int i=0; i<((x/2)-1); i++){
+        k=min(a, x, i, (x/2));
+        l=find(a,x,i,(x/2), k);
+        a[l]=a[i];
+        a[i]=k;
+        
+    }
+}
 
