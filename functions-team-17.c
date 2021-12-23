@@ -38,7 +38,17 @@ void print1dim(int a[], int x){ //esta função imprime um array de 1 dimensão
         printf("%d ", a[i]);
     }printf("\n");
 }
-
+int min(int a[], int x, int y, int z){
+    int k=a[y];
+    for (int i=y; i<z; i++){
+        if(a[i]<k){
+            k=a[i];
+        }
+        else{
+            continue;
+        }
+    }return k;
+}
 
 int find(int a[], int x, int y, int z, int w){ //devolve o índice do primeiro elemento que é igual a w
     for (int i=y; i<z; i++){
