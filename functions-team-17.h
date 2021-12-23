@@ -6,3 +6,4 @@ void print1dim(int a[], int x);
 void task3(int a[], int x);
 int min(int a[], int x, int y, int z);
 int find(int a[], int x, int y, int z, int w);
+void task4(int a[], int x);
