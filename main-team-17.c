@@ -26,6 +26,9 @@ int main(int argc,char *argv[]){
         task3(a, 14);
         print1dim(a,14);
         break;
+    case 4:
+        task4(a, 14);
+        break;
     
     default:
         break;
