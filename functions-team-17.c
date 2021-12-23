@@ -83,3 +83,12 @@ void task4(int a[], int x){
         }
     }printf("\n");
 }
+float averageArray(int a[], int x){
+    float k=0;
+    float *m=&k;
+    for(int i=0; i<x; i++){
+        *m+=a[i];
+    }
+    *m=(float)k/x;
+    return k;
+}
