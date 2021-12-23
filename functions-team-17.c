@@ -37,12 +37,12 @@ void ln(int a[], int x){
         printf("%f ",log((double)a[i]));
     }
 }
-void print1dim(int a[], int x){
+void print1dim(int a[], int x){ //esta função imprime um array de 1 dimensão
     for(int i=0; i<x; i++){
         printf("%d ", a[i]);
     }printf("\n");
 }
-void task3(int a[], int x){
+void task3(int a[], int x){ //esta função serve para meter a primeira metade do array em ordem crescente
     int k,l;
     for(int i=0; i<((x/2)-1); i++){
         k=min(a, x, i, (x/2));
@@ -52,7 +52,7 @@ void task3(int a[], int x){
         
     }
 }
-int min(int a[], int x, int y, int z){
+int min(int a[], int x, int y, int z){ //função que permite calcular o mínimo num intervalo
     int k=a[y];
     for (int i=y; i<z; i++){
         if(a[i]<k){
@@ -63,7 +63,7 @@ int min(int a[], int x, int y, int z){
         }
     }return k;
 }
-int find(int a[], int x, int y, int z, int w){
+int find(int a[], int x, int y, int z, int w){ //devolve o índice do primeiro elemento que é igual a w
     for (int i=y; i<z; i++){
         if(a[i]==w){
             return i; 
@@ -73,7 +73,7 @@ int find(int a[], int x, int y, int z, int w){
         }
     }
 }
-void task4(int a[], int x){
+void task4(int a[], int x){ //imprime os valores que são divisiveis por 3
     for(int i=0; i<x; i++){
         if (a[i]%3==0){
             printf("%d ", a[i]);
@@ -83,7 +83,7 @@ void task4(int a[], int x){
         }
     }printf("\n");
 }
-float averageArray(int a[], int x){
+float averageArray(int a[], int x){ //faz a média de todos os elementos de um array
     float k=0;
     float *m=&k;
     for(int i=0; i<x; i++){
