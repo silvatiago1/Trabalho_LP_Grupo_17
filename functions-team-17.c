@@ -73,3 +73,13 @@ int find(int a[], int x, int y, int z, int w){
         }
     }
 }
+void task4(int a[], int x){
+    for(int i=0; i<x; i++){
+        if (a[i]%3==0){
+            printf("%d ", a[i]);
+        }
+        else{
+            continue;
+        }
+    }printf("\n");
+}
