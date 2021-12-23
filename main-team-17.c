@@ -35,7 +35,9 @@ int main(int argc,char *argv[]){
     case 5:
         printf("O valor médio de todos os elementos do vector é %f\n",averagearray(a,14));
         break;
-    
+    case 9:
+        printf("Apresentação da decomposição em números primos dos números impares no vetor inicial\n");
+        imparemprimos(a);
     default:
         break;
     }

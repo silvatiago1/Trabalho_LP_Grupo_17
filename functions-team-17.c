@@ -83,3 +83,27 @@ float averagearray(int v[],int x)//Função que calcula a média de todos os val
 
     return media;
 }
+
+void imparemprimos(int v[])//Função que calcula e imprime a decomposição em números primos de todos os números impares presentes no array
+{
+    for(int i=0;i<14;i++)
+    {
+        if(v[i]%2!=0)
+        {
+            printf("A decomposição em primo de %i é:",v[i]);
+            
+            int primo=2;
+
+            while(v[i]>1)//Não há risco de multiplicarmos por números não primos pois estes mesmos são compostos por números primos,e caso um número não seja divisível pelos segundos então também não será pelos primeiros
+            {
+                while(v[i]%primo==0)
+                {
+                    printf("%i*",primo);
+                    v[i]=v[i]/primo;
+                }
+                primo ++;
+            }
+            printf("\n");
+        }
+    }
+}
