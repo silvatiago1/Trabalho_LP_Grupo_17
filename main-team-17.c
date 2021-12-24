@@ -7,6 +7,7 @@ int main(int argc,char *argv[]){
     int a[x];
     int a2dim[x][x];
     int op;
+    int n[x]
     if(argc == 2 && strcmp(argv[1], "--help")==0){
         printf("Ajuda será disponibilizada em breve\n");
     }
@@ -41,6 +42,9 @@ int main(int argc,char *argv[]){
         imparemprimos(a);
     case 10:
         printf("Determinante = %d\n", det(14,14, a2dim));
+    case 11:
+        printf("Novo array.");
+        newArray(n[x]);
     default:
         break;
     }
