@@ -7,7 +7,7 @@ int main(int argc,char *argv[]){
     int a[x];
     int a2dim[x][x];
     int op;
-    int n[x]
+    int n[x];
     if(argc == 2 && strcmp(argv[1], "--help")==0){
         printf("Ajuda será disponibilizada em breve\n");
     }
