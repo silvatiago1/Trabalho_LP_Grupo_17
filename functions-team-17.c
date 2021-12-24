@@ -84,16 +84,6 @@ void task4(int a[], int x){
         }
     }printf("\n");
 }
-float averageArray(int a[], int x){
-    float k=0;
-    float *m=&k;
-    for(int i=0; i<x; i++){
-        *m+=a[i];
-    }
-    *m=(float)k/x;
-    return k;
-}
-
 
 void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]){
     for(int i=0; i<x; i++){
@@ -117,12 +107,12 @@ int det(int x, int y, int B[x][y]){ //Determinante de uma matriz de ordem X
     duplicarMatriz(x, y, a, B);
 
     for(int i=0;i<x;i++){
-		for(int j=i+1;j<y;j++){
+	for(int j=i+1;j<y;j++){
             r=(float)a[j][i]/a[i][i];
-			for(int k=0;k<x;k++){
-			  	a[j][k] = a[j][k] - (r)*a[i][k];
-			}
+		for(int k=0;k<x;k++){
+		   a[j][k] = a[j][k] - (r)*a[i][k];
 		}
+	    }
 	}
 
     for(int i=0;i<x;i++){
