@@ -5,6 +5,7 @@
 int main(int argc,char *argv[]){
     int x=14;
     int a[x];
+    int a2dim[x][x];
     int op;
     if(argc == 2 && strcmp(argv[1], "--help")==0){
         printf("Ajuda será disponibilizada em breve\n");
@@ -35,9 +36,11 @@ int main(int argc,char *argv[]){
     case 5:
         printf("O valor médio de todos os elementos do vector é %f\n",averagearray(a,14));
         break;
-    case 9:
+    case 8:
         printf("Apresentação da decomposição em números primos dos números impares no vetor inicial\n");
         imparemprimos(a);
+    case 10:
+        printf("%d\n", det(14,14, a2dim));
     default:
         break;
     }
