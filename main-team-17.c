@@ -40,7 +40,7 @@ int main(int argc,char *argv[]){
         printf("Apresentação da decomposição em números primos dos números impares no vetor inicial\n");
         imparemprimos(a);
     case 10:
-        printf("%d\n", det(14,14, a2dim));
+        printf("Determinante = %d\n", det(14,14, a2dim));
     default:
         break;
     }
