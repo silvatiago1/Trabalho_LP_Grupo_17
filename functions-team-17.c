@@ -32,12 +32,17 @@ int random1Dim(int a[], int x){ //esta função devolve um valor random do arry
     srand((unsigned)time(&t));
     return a[rand()%x];
 }
-
-void print1dim(int a[], int x){ //esta função imprime um array de 1 dimensão
+void ln(int a[], int x){
+    for(int i=0; i<x; i++){
+        printf("%f ",log((double)a[i]));
+    }
+}
+void print1dim(int a[], int x){
     for(int i=0; i<x; i++){
         printf("%d ", a[i]);
     }printf("\n");
 }
+
 int min(int a[], int x, int y, int z){
     int k=a[y];
     for (int i=y; i<z; i++){
@@ -49,8 +54,7 @@ int min(int a[], int x, int y, int z){
         }
     }return k;
 }
-
-int find(int a[], int x, int y, int z, int w){ //devolve o índice do primeiro elemento que é igual a w
+int findv(int a[], int x, int y, int z, int w){
     for (int i=y; i<z; i++){
         if(a[i]==w){
             return i; 
@@ -64,12 +68,70 @@ void task3(int a[], int x){
     int k,l;
     for(int i=0; i<((x/2)-1); i++){
         k=min(a, x, i, (x/2));
-        l=find(a,x,i,(x/2), k);
+        l=findv(a,x,i,(x/2), k);
         a[l]=a[i];
         a[i]=k;
         
     }
 }
+void task4(int a[], int x){
+    for(int i=0; i<x; i++){
+        if (a[i]%3==0){
+            printf("%d ", a[i]);
+        }
+        else{
+            continue;
+        }
+    }printf("\n");
+}
+float averageArray(int a[], int x){
+    float k=0;
+    float *m=&k;
+    for(int i=0; i<x; i++){
+        *m+=a[i];
+    }
+    *m=(float)k/x;
+    return k;
+}
+
+
+void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]){
+    for(int i=0; i<x; i++){
+        for(int j=0; j<x; j++){
+            a[i][j]=b[i][j];
+        }
+    }
+}
+
+void print2(int x, int y, int a[x][y]){
+    for (int i=0; i<x; i++){
+        for(int j=0; j<y; j++){
+            printf("%d ", a[i][j]);
+        }printf("\n");
+    }
+}
+int det(int x, int y, int B[x][y]){ //Determinante de uma matriz de ordem X
+    int a[x][y];
+    float r;
+    int w;
+    duplicarMatriz(x, y, a, B);
+
+    for(int i=0;i<x;i++){
+		for(int j=i+1;j<y;j++){
+            r=(float)a[j][i]/a[i][i];
+			for(int k=0;k<x;k++){
+			  	a[j][k] = a[j][k] - (r)*a[i][k];
+			}
+		}
+	}
+
+    for(int i=0;i<x;i++){
+        w *= a[i][i];
+    }
+    return w;
+}
+
+
 
 float averagearray(int v[],int x)//Função que calcula a média de todos os valores num array
 {
