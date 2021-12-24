@@ -137,9 +137,9 @@ float averagearray(int v[],int x)//Função que calcula a média de todos os val
 }
 
 /*Aluno: Gonçalo Lopes Costa | 48243 */
-int newArray(int n[]) //esta função lê um novo array, multiplica todos os seus componentes e devolve o valor
+int newArray(int n[x]) //esta função lê um novo array, multiplica todos os seus componentes e devolve o valor
 {
-    for(int i = 0; i < 14;i++)
+    for(int i = 0; i < x;i++)
     {
         printf("Indique o valor para a entrada %d do novo array.", i+1);
         scanf("%d", &n[i]);
