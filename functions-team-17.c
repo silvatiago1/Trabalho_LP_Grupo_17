@@ -145,7 +145,7 @@ int newArray(int n[x]) //esta função lê um novo array, multiplica todos os se
         scanf("%d", &n[i]);
         if(n[i] >= 8 && n[i] <= 27)// Caso o utilizador introduza o nº dentro dos parametros
         {
-            continue;
+
         }
         else
         {
