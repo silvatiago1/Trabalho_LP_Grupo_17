@@ -136,6 +136,32 @@ float averagearray(int v[],int x)//Função que calcula a média de todos os val
     return media;
 }
 
+
+void permutacao(int a[])// Função que nos dá na 1ª linha o array original e nas outras 13 as suas permutações
+{
+for(int i = 0; i < 1; i++)
+    {
+        for(int j = 0; j < N; j++)
+        {
+            printf("%d ", a[j]);
+        }
+        printf("\n");
+    }
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[11], a[13], a[12]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[12], a[11], a[13]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[12], a[13], a[11]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[13], a[12], a[11]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[13], a[11], a[12]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[10], a[12], a[13]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[10], a[13], a[12]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[12], a[10], a[13]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[12], a[13], a[10]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[13], a[12], a[10]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[13], a[10], a[12]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[12], a[11], a[10], a[13]);
+    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[12], a[11], a[13], a[10]);
+}
+
 /*Aluno: Gonçalo Lopes Costa | 48243 */
 int newArray(int n[x]) //esta função lê um novo array, multiplica todos os seus componentes e devolve o valor
 {
@@ -166,6 +192,8 @@ int newArray(int n[x]) //esta função lê um novo array, multiplica todos os se
     
     return multiplicacao;
 }
+
+
 
 void imparemprimos(int v[])//Função que calcula e imprime a decomposição em números primos de todos os números impares presentes no array
 {
