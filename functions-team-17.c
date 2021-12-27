@@ -2,6 +2,8 @@
 #include<stdlib.h>
 #include<time.h>
 #include<math.h>
+
+/*funções básicas */
 void formarVectorDim1(int a[], int x){ //esta função forma um vetor de 1 dimensão
     for (int i=0; i<x; i++){
         printf("Indique o valor da %dª entrada:\n", i+1);
@@ -27,6 +29,22 @@ void formarVectorDim2(int y, int x, int a[][y]){ //esta função forma um vetor 
         }
     }
 }
+
+void print1dim(int a[], int x){
+    for(int i=0; i<x; i++){
+        printf("%d ", a[i]);
+    }printf("\n");
+}
+void print2(int x, int y, int a[x][y]){
+    for (int i=0; i<x; i++){
+        for(int j=0; j<y; j++){
+            printf("%d ", a[i][j]);
+        }printf("\n");
+    }
+}
+//**********************************************************************************************
+
+
 int random1Dim(int a[], int x){ //esta função devolve um valor random do arry
     time_t t;
     srand((unsigned)time(&t));
@@ -37,11 +55,9 @@ void ln(int a[], int x){
         printf("%f ",log((double)a[i]));
     }
 }
-void print1dim(int a[], int x){
-    for(int i=0; i<x; i++){
-        printf("%d ", a[i]);
-    }printf("\n");
-}
+
+/*Aluno: Artur Putyato | 47948 */
+
 
 int min(int a[], int x, int y, int z){
     int k=a[y];
@@ -76,7 +92,7 @@ void task3(int a[], int x){
 }
 void task4(int a[], int x){
     for(int i=0; i<x; i++){
-        if (a[i]%3==0){
+        if (a[i]%3!=0){
             printf("%d ", a[i]);
         }
         else{
@@ -93,13 +109,6 @@ void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]){
     }
 }
 
-void print2(int x, int y, int a[x][y]){
-    for (int i=0; i<x; i++){
-        for(int j=0; j<y; j++){
-            printf("%d ", a[i][j]);
-        }printf("\n");
-    }
-}
 int det(int x, int y, int B[x][y]){ //Determinante de uma matriz de ordem X
     int a[x][y];
     float r;
@@ -121,7 +130,7 @@ int det(int x, int y, int B[x][y]){ //Determinante de uma matriz de ordem X
     return w;
 }
 
-
+//*****************************************************************************************************************
 
 float averagearray(int v[],int x)//Função que calcula a média de todos os valores num array
 {
