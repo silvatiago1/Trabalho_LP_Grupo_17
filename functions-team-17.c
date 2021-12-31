@@ -71,14 +71,16 @@ int min(int a[], int x, int y, int z){
     }return k;
 }
 int findv(int a[], int x, int y, int z, int w){
+    int k=-1;
     for (int i=y; i<z; i++){
         if(a[i]==w){
-            return i; 
+            k=i; 
         }
         else{
             continue;
         }
     }
+    return k;
 }
 void task3(int a[], int x){
     int k,l;
