@@ -227,3 +227,72 @@ void imparemprimos(int v[])//Função que calcula e imprime a decomposição em 
         }
     }
 }
+
+
+
+int vetorgerado(int g[], int x) //esta função lê um novo array 1x14
+{
+    for(int c=0; c<14; c++)
+    {
+        printf("Introduza o valor para a entrada %d.", c+1);
+        scanf("%d", &g[c]);
+        if(g[c] >= 8 && g[c] <= 27)
+        {
+
+        }
+        else
+        {
+            while(g[c] < 8 || g[c] > 27)
+            {
+                printf("O número que introduziu não é válido.\n");
+                printf("Introduza o valor para a entrada %d.", c+1);
+                scanf("%d", &g[c]);
+            }
+        }
+    }
+}
+
+void transpostagerado(int x, int y, int g[][x], int gt[][y]) //função que faz a transposta do vetor gerado de modo a que a distributiva dos vetores forme uma matriz 14x14
+{
+    int l, c;
+    for(int l=0; l<x; l++)
+    {
+        for (int c=0; c<y; c++)
+        {
+            g[l][c] = gt[c][l];
+        }
+    }
+}
+
+int distributiva (int i, int j, int c, int m) //esta função realiza a distributiva entre o vetor inicial e o vetor gerado
+{
+    int v[i][j];
+    int gtv[i][l];
+    transpostagerado(x, y, g, gt);
+
+    for(int i=0; i<14; i++)
+    {
+        for(int l=0; l<14; l++)
+        {
+            gtv[i][l] = 0;
+            for(int z=0; z<14; z++)
+            {
+                m += v[i][z] * gt[z][l];
+                {
+                    gtv[i][l] = m;
+                    m = 0;
+                }
+            }
+        }
+    }
+    
+    for(int i=0; i<14; i++)
+    {
+        for(int l=0; l<14; l++)
+        {
+            printf("%d", gtv[i][l]);
+        }
+        printf("\n\n");
+    } 
+}
+
