@@ -264,7 +264,7 @@ void transpostagerado(int x, int y, int g[][x], int gt[][y]) //função que faz 
     }
 }
 
-int distributiva (int i, int j, int c, int m) //esta função realiza a distributiva entre o vetor inicial e o vetor gerado
+int distributiva (int i, int j, int c, int m, int l) //esta função realiza a distributiva entre o vetor inicial e o vetor gerado
 {
     int v[i][j];
     int gt[c][l];
