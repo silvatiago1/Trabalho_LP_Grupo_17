@@ -230,7 +230,7 @@ void imparemprimos(int v[])//Função que calcula e imprime a decomposição em 
 
 
 
-int vetorgerado(int g[], int x) //esta função lê um novo array 1x14
+int vetorgerado(int g[]) //esta função lê um novo array 1x14
 {
     for(int c=0; c<14; c++)
     {
