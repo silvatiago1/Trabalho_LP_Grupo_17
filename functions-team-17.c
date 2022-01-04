@@ -174,34 +174,17 @@ for(int i = 0; i < 1; i++)
 }
 
 /*Aluno: Gonçalo Lopes Costa | 48243 */
-int newArray(int n[x]) //esta função lê um novo array, multiplica todos os seus componentes e devolve o valor
+int newArray(int x) //esta função lê um novo array, multiplica todos os seus componentes e devolve o valor
 {
-    for(int i = 0; i < 14;i++)
-    {
-        printf("Indique o valor para a entrada %d do novo array.", i+1);
-        scanf("%d", &n[i]);
-        if(n[i] >= 8 && n[i] <= 27)// Caso o utilizador introduza o nº dentro dos parametros
-        {
+    int n[x];
+    formarVectorDim1(n, x);
 
-        }
-        else
-        {
-            while(n[i] < 8 || n[i] > 27)// Caso o utilizador introduza um nº fora dos parametros
-            {
-                printf("O número que introduziu não é válido. (Deve de estar compreendido entre 8 e 27!)\n");
-                printf("Volte a introduzir o valor para a entrada %d do novo array.", i+1);
-                scanf("%d", &n[i]);
-            }
-        }
-    }
-    int multiplicacao = n[0]; //vai usar como valor base o primeiro valor do novo array
+    int multiplicacao = n[0]; 
 
-    for (int i = 1; i < 14; i++)
+    for (int i = 1; i < x; i++)
     {
         multiplicacao *= n[i];
     }
-    
-    return multiplicacao;
 }
 
 
