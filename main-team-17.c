@@ -48,7 +48,7 @@ int main(int argc,char *argv[]){
         printf("Determinante = %d\n", det(14,14, a2dim));
     case 11:
         newArray(n[x]);
-        printf("A multiplicação dos elementos do novo array é %d.", newArray(n[x]);
+        printf("A multiplicação dos elementos do novo array é %d.", newArray(n[x]));
     default:
         break;
     }
