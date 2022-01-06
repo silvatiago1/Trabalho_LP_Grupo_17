@@ -25,7 +25,7 @@ int main(int argc,char *argv[]){
         printf("O elemento aleatório é:\t %d\n",random1Dim(a,14));
         break;
     case 2:
-        //ln(a, 14);
+        logaritmo(a, 14);
         break;
     case 3:
         task3(a, 14);
