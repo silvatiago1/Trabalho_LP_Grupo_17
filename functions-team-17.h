@@ -12,3 +12,4 @@ int newArray(int n[]); // Exe 1 da 2ª parte
 int det(int x, int y, int B[x][y]); //calcula o determinante de qualquer matriz quadrada
 void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]); //clona uma matriz
 void print2(int x, int y, int a[x][y]); //imprime uma matriz
+void logaritmo(int a[], int x); //calcula e imprime o logaritmo de cada elemento do array
