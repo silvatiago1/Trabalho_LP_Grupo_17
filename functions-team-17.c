@@ -282,3 +282,21 @@ int distributiva (int i, int j, int c, int m, int l) //esta função realiza a d
     } 
 }
 
+/*Aluno: Gabriel Mendes Miguéns Maria | 47922 */
+
+//Cálculo do logaritmo (base natural) de todos os elementos no vetor;
+
+void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array calcula o logaritmo base 10 de cada um e em seguida imprime o seu logaritmo
+
+    for (int i=0; i<x; i++){
+        float log;
+        log = log10(a[i]);
+
+        printf("log10(%d) = %.3f", a[i], log);
+        if(i<x-1){
+            printf(", ");
+        }
+    }
+    printf("\n");
+}
+
