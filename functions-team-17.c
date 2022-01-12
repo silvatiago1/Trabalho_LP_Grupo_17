@@ -185,6 +185,7 @@ int newArray(int x) //esta função lê um novo array, multiplica todos os seus 
     {
         multiplicacao *= n[i];
     }
+    return multiplicação;
 }
 
 
