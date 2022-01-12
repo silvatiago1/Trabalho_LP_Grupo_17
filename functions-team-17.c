@@ -152,7 +152,7 @@ void permutacao(int a[])// Função que nos dá na 1ª linha o array original e 
 {
 for(int i = 0; i < 1; i++)
     {
-        for(int j = 0; j < N; j++)
+        for(int j = 0; j < 14; j++)
         {
             printf("%d ", a[j]);
         }
