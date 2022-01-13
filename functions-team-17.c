@@ -43,9 +43,9 @@ void print2(int x, int y, int a[x][y]){
     }
 }
 //**********************************************************************************************
+/* Aluno: Tiago Borges | 47855 */
 
-
-int random1Dim(int a[], int x){ //esta função devolve um valor random do arry
+int random1Dim(int a[], int x){ //esta função devolve um valor random do array
     time_t t;
     srand((unsigned)time(&t));
     return a[rand()%x];
