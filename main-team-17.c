@@ -38,7 +38,7 @@ int main(int argc,char *argv[]){
         printf("O valor médio de todos os elementos do vector é %f\n",averagearray(a,14));
         break;
     case 6:
-        printf("O seu aray e as suas 13 permutações é:\n");
+        printf("O seu array e as suas 13 permutações é:\n");
         void permutacao(int a[]);
         break;
     case 8:
