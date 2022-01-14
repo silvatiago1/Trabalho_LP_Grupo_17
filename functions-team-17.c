@@ -218,49 +218,7 @@ void imparemprimos(int v[])//Função que calcula e imprime a decomposição em 
 
 /*Aluno: João Pedro Silveiro Rainha | 48506 */
 
-int matriz(int x, int y, int c, int l, int w, int m) // Esta função lê un novo vetor 1x14, realiza a sua transposta e multiplica-a pelo vetor inicial formando uma matriz 14x14
-{
-    int g[x];
-    formarVectorDim1(g, x);
 
-    int t[c]; //transposta do vetor gerado
-
-    for(int l=0; l<x; l++)
-    {
-        for (int c=0; c<y; c++)
-        {
-            g[x] = t[c];
-        }
-    }
-
-    int tv[l][c]; //matriz 14x14
-    int v[l]; //vetor inicial
-
-    for(int l=0; l<x; l++)
-    {
-        for(int c=0; c<y; c++)
-        {
-            tv[l][c] = 0;
-            for(int z=0; z<w; z++)
-            {
-                m += v[l] * t[c];
-                {
-                    tv[l][c] = m;
-                    m = 0;
-                }
-            }
-        }
-    }
-    
-    for(int l=0; l<x; l++)
-    {
-        for(int c=0; c<y; c++)
-        {
-            printf("%d", tv[l][c]);
-        }
-        printf("\n\n");
-    } 
-}
 
 
 /*Aluno: Gabriel Mendes Miguéns Maria | 47922 */
