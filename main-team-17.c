@@ -49,8 +49,9 @@ int main(int argc,char *argv[]){
         imparemprimos(a);
         break;
     case 10:
-    //João
-    break;
+        printf("A matriz 14x14 resultante da multiplicação dos dois vetores é:\n");
+        matriz(a, 14);
+        break;
     case 11:
         printf("Determinante = %d\n", det(14,14, a2dim));    
         break;
