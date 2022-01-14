@@ -242,11 +242,10 @@ int matriz(int x, int y, int c, int l, int w, int m) // Esta função lê un nov
         {
             tv[l][c] = 0;
             m += v[l] * t[c];
-            {
-                tv[l][c] = m;
-                m = 0;
-            }
-        }      
+        }
+        
+        tv[l][c] = m;
+        m = 0;    
     }
     
     for(int l=0; l<x; l++)
