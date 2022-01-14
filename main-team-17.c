@@ -42,7 +42,7 @@ int main(int argc,char *argv[]){
         permutacao(a);
         break;
     case 8:
-        printf("A multiplicação dos elementos do novo array é %d.", newArray(x));
+        printf("A multiplicação dos elementos do novo array é %d.\n", newArray(x));
         break;
     case 9:
         printf("Apresentação da decomposição em números primos dos números impares no vetor inicial\n");
