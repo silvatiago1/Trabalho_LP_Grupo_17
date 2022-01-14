@@ -44,11 +44,15 @@ int main(int argc,char *argv[]){
     case 8:
         printf("Apresentação da decomposição em números primos dos números impares no vetor inicial\n");
         imparemprimos(a);
-    case 10:
-        printf("Determinante = %d\n", det(14,14, a2dim));
-    case 11:
+        break;
+    case 9:
         printf("A multiplicação dos elementos do novo array é %d.", newArray(x));
-    default:
+        break;
+    case 10:
+        printf("Determinante = %d\n", det(14,14, a2dim));    
+        break;
+
+        default:
         break;
     }
     printf("1-Retorno de um elemento aleatório desse vector\n2-Cálculo do logaritmo natural de todos os elementos do vector\n3-Devolução do vetor com a primeira metade dos valores ordenada por ordem crescente\n4-Valores do vector que não sáo divisíveis por 3\n5-Média de todos os elementos do vector\n6-...\n");

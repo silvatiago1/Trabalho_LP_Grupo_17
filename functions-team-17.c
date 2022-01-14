@@ -132,8 +132,7 @@ int det(int x, int y, int B[x][y]){ //Determinante de uma matriz de ordem X
     return w;
 }
 
-//*****************************************************************************************************************
-
+/*Aluno: Tiago Lopes Monteiro da Silva | 48138 */
 float averagearray(int v[],int x)//Função que calcula a média de todos os valores num array
 {
     int somtotal=0;
@@ -147,7 +146,7 @@ float averagearray(int v[],int x)//Função que calcula a média de todos os val
     return media;
 }
 
-
+/*Aluno: Gonçalo Lopes Costa | 48243 */
 void permutacao(int a[])// Função que nos dá na 1ª linha o array original e nas outras 13 as suas permutações
 {
 for(int i = 0; i < 1; i++)
@@ -189,13 +188,17 @@ int newArray(int x) //esta função lê um novo array, multiplica todos os seus 
 }
 
 
-
+/*Aluno: Tiago Lopes Monteiro da Silva | 48138 */
 void imparemprimos(int v[])//Função que calcula e imprime a decomposição em números primos de todos os números impares presentes no array
-{
+{   
+    int error=0;
+
     for(int i=0;i<14;i++)
     {
         if(v[i]%2!=0)
         {
+            error=1;
+
             printf("A decomposição em primo de %i é:",v[i]);
             
             int primo=2;
@@ -211,6 +214,11 @@ void imparemprimos(int v[])//Função que calcula e imprime a decomposição em 
             }
             printf("\n");
         }
+    }
+
+    if (error==0)
+    {
+        printf("O vetor não tem nenhum número ímpar!\n");
     }
 }
 
