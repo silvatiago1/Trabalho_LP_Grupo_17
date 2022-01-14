@@ -42,13 +42,16 @@ int main(int argc,char *argv[]){
         void permutacao(int a[]);
         break;
     case 8:
+        printf("A multiplicação dos elementos do novo array é %d.", newArray(x));
+        break;
+    case 9:
         printf("Apresentação da decomposição em números primos dos números impares no vetor inicial\n");
         imparemprimos(a);
         break;
-    case 9:
-        printf("A multiplicação dos elementos do novo array é %d.", newArray(x));
-        break;
     case 10:
+    //João
+    break;
+    case 11:
         printf("Determinante = %d\n", det(14,14, a2dim));    
         break;
 
