@@ -13,3 +13,4 @@ int det(int x, int y, int B[x][y]); //calcula o determinante de qualquer matriz 
 void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]); //clona uma matriz
 void print2(int x, int y, int a[x][y]); //imprime uma matriz
 void logaritmo(int a[], int x); //calcula e imprime o logaritmo de cada elemento do array
+void matriz(int x, int a[x], int b[x][x]);
