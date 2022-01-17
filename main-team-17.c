@@ -2,15 +2,23 @@
 #include"functions-team-17.h"
 #include<locale.h> //este header permite meter acentos e outras coisas da língua portuguesa
 #include<string.h>
+#include<stdlib.h>
+
 int main(int argc,char *argv[]){
     int x=14;
     int a[x];
     int a2dim[x][x];
     int op;
-    int n[x];
+    int n[x];char command[50];
+
+    strcpy(command, "clear" );
+    system(command);
+
     if(argc == 2 && strcmp(argv[1], "--help")==0){
         printf("Ajuda será disponibilizada em breve\n");
+        
     }
+    printf("Seja bem-vindo! Indique as entradas de um vector de 14 posições para começar! \n \n");
     formarVectorDim1(a,x);
 
     printf("1-Retorno de um elemento aleatório desse vector\n2-Cálculo do logaritmo natural de todos os elementos do vector\n3-Devolução do vetor com a primeira metade dos valores ordenada por ordem crescente\n4-Valores do vector que não sáo divisíveis por 3\n5-Média de todos os elementos do vector\n6-...\n");
@@ -42,7 +50,7 @@ int main(int argc,char *argv[]){
         permutacao(a);
         break;
     case 8:
-        printf("A multiplicação dos elementos do novo array é %d.\n", newArray(x));
+        printf("A multiplicação dos elementos do novo array é %lld.\n", newArray(x));
         break;
     case 9:
         printf("Apresentação da decomposição em números primos dos números impares no vetor inicial\n");
@@ -50,7 +58,7 @@ int main(int argc,char *argv[]){
         break;
     case 10:
         printf("A matriz 14x14 resultante da multiplicação dos dois vetores é:\n");
-        matriz(a, 14);
+        matriz(14, a, a2dim);
         break;
     case 11:
         printf("Determinante = %d\n", det(14,14, a2dim));    
