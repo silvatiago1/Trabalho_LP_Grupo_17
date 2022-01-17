@@ -173,12 +173,12 @@ for(int i = 0; i < 1; i++)
 }
 
 /*Aluno: Gonçalo Lopes Costa | 48243 */
-int newArray(int x) //esta função lê um novo array, multiplica todos os seus componentes e devolve o valor
+long long int newArray(int x) //esta função lê um novo array, multiplica todos os seus componentes e devolve o valor
 {
     int n[x];
     formarVectorDim1(n, x);
 
-    int multiplicacao = n[0]; 
+    long long int multiplicacao = n[0]; 
 
     for (int i = 1; i < x; i++)
     {
