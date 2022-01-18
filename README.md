@@ -34,7 +34,7 @@ $ ./main.exe --help
 ```
 
 - ### Help command after execution
-```bash
+```
 1-Retorno de um elemento aleatório desse vector
 2-Cálculo do logaritmo natural de todos os elementos do vector
 3-Devolução do vetor com a primeira metade dos valores ordenada por ordem crescente
