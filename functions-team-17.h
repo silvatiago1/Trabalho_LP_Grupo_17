@@ -7,7 +7,7 @@ int find(int a[], int x, int y, int z, int w); //suplementar para encontrar o pr
 void task3(int a[], int x); //Artur
 float averagearray(int v[],int x);//Exercício 5 da primeira metade
 void imparemprimos(int v[]);
-void permutacao(int a[]); //Exe 6 da 1ªparte
+void permutacao(int a[], int x); //Exe 6 da 1ªparte
 long long int newArray(int x); // Exe 1 da 2ª parte
 int det(int x, int y, int B[x][y]); //calcula o determinante de qualquer matriz quadrada
 void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]); //clona uma matriz
