@@ -149,27 +149,16 @@ float averagearray(int v[],int x)//Função que calcula a média de todos os val
 /*Aluno: Gonçalo Lopes Costa | 48243 */
 void permutacao(int a[])// Função que nos dá na 1ª linha o array original e nas outras 13 as suas permutações
 {
-for(int i = 0; i < 1; i++)
+    int aux;
+    formarVectorDim1(a, x);
+    print1dim(a,x);
+    for(int i = 1; i<x; i++)
     {
-        for(int j = 0; j < 14; j++)
-        {
-            printf("%d ", a[j]);
-        }
-        printf("\n");
+        aux = a[0];
+        a[0] = a[i];
+        a[i] = aux;
+        print1dim(a, x);
     }
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[11], a[13], a[12]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[12], a[11], a[13]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[12], a[13], a[11]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[13], a[12], a[11]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[10], a[13], a[11], a[12]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[10], a[12], a[13]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[10], a[13], a[12]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[12], a[10], a[13]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[12], a[13], a[10]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[13], a[12], a[10]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[11], a[13], a[10], a[12]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[12], a[11], a[10], a[13]);
-    printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d\n", a[0], a[1], a[2], a[3], a[4], a[5], a[6], a[7], a[8], a[9], a[12], a[11], a[13], a[10]);
 }
 
 /*Aluno: Gonçalo Lopes Costa | 48243 */
