@@ -49,7 +49,7 @@ int main(int argc,char *argv[]){
         printf("O seu array e as suas 13 permutações é:\n");
         permutacao(a, x);
         break;
-    case 7;
+    case 7:
         ajuda();
         break;
     case 8:
