@@ -243,6 +243,7 @@ void matriz(int x, int a[x], int b[x][x]) // Esta função lê un novo vetor 1x1
 /*Aluno: Gabriel Mendes Miguéns Maria | 47922 */
 
 //Cálculo do logaritmo (base natural) de todos os elementos no vetor;
+//Entrada 2 no menu
 
 void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array calcula o logaritmo base 10 de cada um e em seguida imprime o seu logaritmo
 
@@ -256,4 +257,14 @@ void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array c
         }
     }
     printf("\n");
+}
+
+//Imprime ajuda sobre o programa;
+//Entrada 7 no menu
+
+void ajuda(){
+
+    printf("------------------------------------AJUDA------------------------------------\n");
+    printf("Após ter introduzido os 14 números, este programa tem como objetivo\nrealizar diversas funções com esses mesmos números, funções estas que\npodem ser executadas de forma simples no menu do programa. Para um\nmelhor entendimento do menu e melhor execução do mesmo leia as seguintes\ninstruções:\n   ·Prima '0' para sair do menu;\n   ·Prima '1' para obter um valor aleatório presente no vetor anteriormente\n\tinserido;\n   ·Prima '2' para fazer o cálculo do logaritmo de todos os valores presentes\n\tno vetor;\n   ·Prima '3' para obter a devolução do vetor, em que a primeira metade dos\n\tvalores desse mesmo vetor estão ordenados por ordem crescente;\n   ·Prima '4' para obter a devolução dos valores do vetor que não são\n\tivisíveis por três;\n   ·Prima '5' para fazer o cálculo da média de todos os elementos no vetor;\n   ·Prima '6' para obter uma matriz 14x14 em que cada linha é composta pelo\n\tvetor lido na primeira linha e por permutações dos seus valores que\n\teram inseridos nas outras linhas;\n   ·Prima '7' para aceder à página de ajuda;\n   ·Prima '8' para fazer o cálculo do produto inteiro;\n   ·Prima '9' para decompor em números primos os números ímpares inseridos\n\tanteriormente;\n   ·Prima '10' para gerar uma matriz 1X14 na qual terá de inserir novamente\n\tos números e a essa matriz será multiplicada a matriz iniciar desta \n\tforma, depois de ter introduzidos os números, será-lhe apresentado no\n\tecrã a matriz resultante desse mesmo produto;\n   ·Prima '11' para fazer o cálculo do determinante da matriz gerada\n\tna entrada '10';");
+    printf("\n-----------------------------------------------------------------------------\n");
 }
