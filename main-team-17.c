@@ -49,6 +49,9 @@ int main(int argc,char *argv[]){
         printf("O seu array e as suas 13 permutações é:\n");
         permutacao(a, x);
         break;
+    case 7;
+        ajuda();
+        break;
     case 8:
         printf("A multiplicação dos elementos do novo array é %lld.\n", newArray(x));
         break;
