@@ -36,37 +36,11 @@ or
 $ ./main.exe --help
 ```
 
-- ### Help command after execution
-```
- ________________________________________________________________________
-|                                                                        |
-|                                                                        |
-|                             MENÚ DE OPÇÕES                             |
-|                                                                        |
-|     1-Saír do programa;                                                |
-|     2-Formar vetor inicial;                                            |
-|       A-Retorno de um elemento aleatório do vector;                    |
-|       B-Cálculo do logaritmo natural de todos os elementos do vector;  |
-|       C-Devolução do vector com a primeira metade dos valores ordenada |
-|         por ordem crescente;                                           |
-|       D-Valores do vector que não são divisíveis por 3;                |
-|       E-Média de todos os elementos do vector;                         |
-|       Q-saír;                                                          |
-|     3-Criar uma matriz (14x14) resultante da permutação do vector      |
-|       inicial;                                                         |
-|     4-Criar um novo vector e cálculo do produto interno com o vetor    |
-|       inicial;                                                         |
-|     5-Decomposição em números primos os elementos ímpares do vector    |
-|       inicial;                                                         |
-|     6-Criar um novo vector e fazer a multiplicação vetorial com        |
-|       vetor inicial;                                                   |
-|       A-Cálculo do determinante dessa matriz;                          |
-|       Q-saír;                                                          |
-|     7-Ajuda;                                                           |
-|                                                                        |
-|________________________________________________________________________|
+### Help command after execution
+![Demo Animation]()
+
 Press 7 to help be provided
-````
+
 
 
 
