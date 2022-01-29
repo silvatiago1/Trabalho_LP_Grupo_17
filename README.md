@@ -26,7 +26,8 @@ $ make
 ```
 
 ## Usage
-- ### Help commands at runtime
+
+### Help commands at runtime
 ```
 $ make help
 ```
@@ -37,12 +38,34 @@ $ ./main.exe --help
 
 - ### Help command after execution
 ```
-1-Retorno de um elemento aleatório desse vector
-2-Cálculo do logaritmo natural de todos os elementos do vector
-3-Devolução do vetor com a primeira metade dos valores ordenada por ordem crescente
-4-Valores do vector que não sáo divisíveis por 3
-5-Média de todos os elementos do vector
-6-...
+ ________________________________________________________________________
+|                                                                        |
+|                                                                        |
+|                             MENÚ DE OPÇÕES                             |
+|                                                                        |
+|     1-Saír do programa;                                                |
+|     2-Formar vetor inicial;                                            |
+|       A-Retorno de um elemento aleatório do vector;                    |
+|       B-Cálculo do logaritmo natural de todos os elementos do vector;  |
+|       C-Devolução do vector com a primeira metade dos valores ordenada |
+|         por ordem crescente;                                           |
+|       D-Valores do vector que não são divisíveis por 3;                |
+|       E-Média de todos os elementos do vector;                         |
+|       Q-saír;                                                          |
+|     3-Criar uma matriz (14x14) resultante da permutação do vector      |
+|       inicial;                                                         |
+|     4-Criar um novo vector e cálculo do produto interno com o vetor    |
+|       inicial;                                                         |
+|     5-Decomposição em números primos os elementos ímpares do vector    |
+|       inicial;                                                         |
+|     6-Criar um novo vector e fazer a multiplicação vetorial com        |
+|       vetor inicial;                                                   |
+|       A-Cálculo do determinante dessa matriz;                          |
+|       Q-saír;                                                          |
+|     7-Ajuda;                                                           |
+|                                                                        |
+|________________________________________________________________________|
+Press 7 to help be provided
 ````
 
 
@@ -50,5 +73,8 @@ $ ./main.exe --help
 ## Authors
 - Artur Putyato
 - Tiago Silva
-- ...
+- Tiago Borges
+- Gonçalo Costa
+- João Raínha
+- Gabriel Maria
 
