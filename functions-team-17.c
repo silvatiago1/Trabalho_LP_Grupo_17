@@ -4,7 +4,12 @@
 #include<math.h>
 
 /*funções básicas */
-void formarVectorDim1(int a[], int x){ //esta função forma um vetor de 1 dimensão
+/**
+ * @brief Função que forma um vector de 1 dimensão.
+ * @param a Vector de 1 dimensão em que os valores serão guardados.
+ * @param x Quantidade de elementos do vector a.
+ */
+void formarVectorDim1(int a[], int x){ 
     for (int i=0; i<x; i++){
         printf("Indique o valor da %dª entrada:\n", i+1);
         scanf("%d", &a[i]);
@@ -21,7 +26,13 @@ void formarVectorDim1(int a[], int x){ //esta função forma um vetor de 1 dimen
         }
     }
 }
-void formarVectorDim2(int y, int x, int a[][y]){ //esta função forma um vetor de 2 dimensões
+/**
+ * @brief Função que forma um vector de 2 dimensões.
+ * @param y Número de colunas do vector.
+ * @param x Números de linhas do vector.
+ * @param a Vector de duas dimensões onde serão guardados valores.
+ */
+void formarVectorDim2(int y, int x, int a[][y]){ 
     for (int i=0; i<x; i++){
         for (int j=0; j<y; j++){
             printf("Indique o valor da entrada (%d, %d):\n", i+1, j+1);
@@ -29,12 +40,23 @@ void formarVectorDim2(int y, int x, int a[][y]){ //esta função forma um vetor 
         }
     }
 }
+/**
+ * @brief Função que imprime um dado vector a.
+ * @param a Vector de 1 dimensão em que os valores serão guardados.
+ * @param x Quantidade de elementos do vector a.
+ */
 
 void print1dim(int a[], int x){
     for(int i=0; i<x; i++){
         printf("%d ", a[i]);
     }printf("\n");
 }
+/**
+ * @brief Função que imprime um dado vector a.
+ * @param a Vector de 1 dimensão em que os valores serão guardados.
+ * @param x Números de linhas do vector.
+ * @param y Números de linhas do vector.
+ */
 void print2(int x, int y, int a[x][y]){
     for (int i=0; i<x; i++){
         for(int j=0; j<y; j++){
@@ -42,11 +64,37 @@ void print2(int x, int y, int a[x][y]){
         }printf("\n");
     }
 }
+/**
+ * @brief Função que duplica um dado array a de 1 dimensão.
+ * @param x Quantidade de elementos do vector a e b.
+ * @param a Vector a já com valores guardado.
+ * @param b Vector ao qual os valores de a serão copiados.
+ */
 void duplicarArray1dim(int x, int a[], int b[]){
     for(int i=0; i<x; i++){
         b[i]=a[i];
     }
 }
+/**
+ * @brief Função que duplica um dado array a de 2 dimensões.
+ * 
+ * @param x Números de linhas dos vectores.
+ * @param y Números de linhas dos vectores.
+ * @param a Vector de duas dimensões que já tem os valores guardados.
+ * @param b Vector de duas dimensões onde serão guardados valores.
+ */
+
+void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]){
+    for(int i=0; i<x; i++){
+        for(int j=0; j<x; j++){
+            a[i][j]=b[i][j];
+        }
+    }
+}
+/**
+ * @brief Menú geral de opções.
+ * 
+ */
 void menu(void){
     printf(" ________________________________________________________________________\n");
     printf("|                                                                        |\n");
@@ -54,7 +102,7 @@ void menu(void){
     printf("|                             MENÚ DE OPÇÕES                             |\n");
     printf("|                                                                        |\n");
     printf("|     1-Saír do programa;                                                |\n");
-    printf("|     2-Formar vetor inicial;                                            |\n");
+    printf("|     2-Usando o vetor inicial;                                          |\n");
     printf("|       A-Retorno de um elemento aleatório do vector;                    |\n");
     printf("|       B-Cálculo do logaritmo natural de todos os elementos do vector;  |\n");
     printf("|       C-Devolução do vector com a primeira metade dos valores ordenada |\n");
@@ -78,6 +126,10 @@ void menu(void){
 
 }
 void submenu1(void){
+    /**
+     * @brief Menú usado aquando da opção 2 do menú geral.
+     * 
+     */
 
     printf(" ________________________________________________________________________\n");
     printf("|                                                                        |\n");
@@ -96,6 +148,10 @@ void submenu1(void){
 
 }
 void submenu2(void){
+    /**
+     * @brief Menú usado aquando da opção 6 do menú geral.
+     * 
+     */
 
     printf(" ________________________________________________________________________\n");
     printf("|                                                                        |\n");
@@ -115,19 +171,29 @@ void submenu2(void){
 //**********************************************************************************************
 /* Aluno: Tiago Borges | 47855 */
 
+/**
+ * @brief Função que devolve um elemento ao acaso de um vetor a.
+ * @param a Vector de 1 dimensão passado como argumento.
+ * @param x Quantidade de elementos do vector a.
+ * @return Retorna um elemento inteiro do vector (int).
+ */
 int random1Dim(int a[], int x){ //esta função devolve um valor random do array
     time_t t;
     srand((unsigned)time(&t));
     return a[rand()%x];
 }
-void ln(int a[], int x){
-    for(int i=0; i<x; i++){
-        printf("%f ",log((double)a[i]));
-    }
-}
 
 /*Aluno: Artur Putyato | 47948 */
 
+/**
+ * @brief Função que permite localizar o elemento de menor valor.
+ * 
+ * @param a Vector de 1 dimensão passado como argumento,
+ * @param x Quantidade de elementos do vector a.
+ * @param y A posição limite-inferior do intervalo em que a função é aplicada.
+ * @param z A posição seguinte à limite-superior em que a função é aplicada.
+ * @return Retorna o elemento minímo determinado (int).
+ */
 
 int min(int a[], int x, int y, int z){
     int k=a[y];
@@ -140,6 +206,15 @@ int min(int a[], int x, int y, int z){
         }
     }return k;
 }
+/**
+ * @brief Função que identifica a posição do primeiro elemento do vector igual a um valor.
+ * @param a Vector de 1 dimensão passado como argumento,
+ * @param x Quantidade de elementos do vector a.
+ * @param y A posição limite-inferior do intervalo em que a função é aplicada.
+ * @param z A posição seguinte à limite-superior em que a função é aplicada.
+ * @param w Valor que se pretende procurar no vector.
+ * @return Retorna a primeira ocorrência do elemento do vector igual a w se não encontrar devolve -1 (int).
+ */
 int findv(int a[], int x, int y, int z, int w){
     int k=-1;
     for (int i=y; i<z; i++){
@@ -152,6 +227,12 @@ int findv(int a[], int x, int y, int z, int w){
     }
     return k;
 }
+/**
+ * @brief Função que permite meter por ordem crescente a primeira metade dos elementos do vector.
+ * 
+ * @param a Vector de 1 dimensão passado como argumento.
+ * @param x Quantidade de elementos do vector a.
+ */
 void task3(int a[], int x){
     int k,l;
     for(int i=0; i<((x/2)-1); i++){
@@ -162,6 +243,12 @@ void task3(int a[], int x){
         
     }
 }
+/**
+ * @brief Função imprime os valores que não são divisíveis por 3.
+ * 
+ * @param a Vector de 1 dimensão passado como argumento.
+ * @param x Quantidade de elementos do vector a.
+ */
 void task4(int a[], int x){
     for(int i=0; i<x; i++){
         if (a[i]%3!=0){
@@ -172,14 +259,14 @@ void task4(int a[], int x){
         }
     }printf("\n");
 }
-
-void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]){
-    for(int i=0; i<x; i++){
-        for(int j=0; j<x; j++){
-            a[i][j]=b[i][j];
-        }
-    }
-}
+/**
+ * @brief Função que determina o determinante de uma matriz.
+ * 
+ * @param x Números de linhas dos vectores.
+ * @param y Números de linhas dos vectores.
+ * @param B Matriz que é passada como argumento.
+ * @return Retorna o determinante que foi calculado aquando da execução do programa (int).
+ */
 
 int det(int x, int y, int B[x][y]){ //Determinante de uma matriz de ordem X
     int a[x][y];
@@ -203,6 +290,13 @@ int det(int x, int y, int B[x][y]){ //Determinante de uma matriz de ordem X
 }
 
 /*Aluno: Tiago Lopes Monteiro da Silva | 48138 */
+/**
+ * @brief Função que determina o valor médio de todos os elementos do  array.
+ * 
+ * @param v Vector de 1 dimensão passado como argumento.
+ * @param x Quantidade de elementos do vetor v.
+ * @return Média de todos os elementos do vector (float).
+ */
 float averagearray(int v[],int x)//Função que calcula a média de todos os valores num array
 {
     int somtotal=0;
@@ -217,6 +311,11 @@ float averagearray(int v[],int x)//Função que calcula a média de todos os val
 }
 
 /*Aluno: Gonçalo Lopes Costa | 48243 */
+/**
+ * @brief Função que permite imprimir as permutações de um vector a.
+ * 
+ * @param a Vector de 1 dimensão a que é passado como argumento.
+ */
 void permutacao(int a[])// Função que nos dá na 1ª linha o array original e nas outras 13 as suas permutações
 {
     int aux;
@@ -230,6 +329,13 @@ void permutacao(int a[])// Função que nos dá na 1ª linha o array original e 
 }
 
 /*Aluno: Gonçalo Lopes Costa | 48243 */
+/**
+ * @brief Esta função lê um novo vector e faz o produto interno entre o vector lido e o vector inicial.
+ * 
+ * @param a Vector de 1 dimensão que é passado como argumento.
+ * @param x Quantidade de elementos de um vector.
+ * @return Resultado do produto interno entre dois vectores (int). 
+ */
 int newArray(int a[], int x) //esta função lê um novo array, multiplica todos os seus componentes e devolve o valor
 {
     int n[x];
@@ -246,7 +352,12 @@ int newArray(int a[], int x) //esta função lê um novo array, multiplica todos
 
 
 /*Aluno: Tiago Lopes Monteiro da Silva | 48138 */
-void imparemprimos(int v[])//Função que calcula e imprime a decomposição em números primos de todos os números impares presentes no array
+/**
+ * @brief Função que calcula e imprime a decomposição em números primos de todos os números impares presentes no array
+ * 
+ * @param v Vector de 1 dimensão que é passado como argumento.
+ */
+void imparemprimos(int v[])
 {   
     int error=0;
 
@@ -286,8 +397,15 @@ void imparemprimos(int v[])//Função que calcula e imprime a decomposição em 
 
 
 /*Aluno: João Pedro Silveiro Rainha | 48506 */
+/**
+ * @brief  Esta função lê un novo vetor 1x14, realiza a sua transposta e multiplica-a pelo vetor inicial formando uma matriz 14x14
+ * 
+ * @param x Quantidade de elementos do vector de 1 dimensão.
+ * @param a Vector de 1 dimensão com valores previamente guardado.
+ * @param b Vector de 2 dimensões que resultará da multiplicação vetorial entre dois vetores.
+ */
 
-void matriz(int x, int a[x], int b[x][x]) // Esta função lê un novo vetor 1x14, realiza a sua transposta e multiplica-a pelo vetor inicial formando uma matriz 14x14
+void matriz(int x, int a[x], int b[x][x]) 
 {
     int g[x];
     formarVectorDim1(g, x);
@@ -308,8 +426,13 @@ void matriz(int x, int a[x], int b[x][x]) // Esta função lê un novo vetor 1x1
 
 /*Aluno: Gabriel Mendes Miguéns Maria | 47922 */
 
-//Cálculo do logaritmo (base natural) de todos os elementos no vetor;
-//Entrada 2 no menu
+
+/**
+ * @brief Função que efetua o cálculo do logaritmo (base natural) de todos os elementos no vetor
+ * 
+ * @param a Vector de 1 dimensão passado como argumento.
+ * @param x Quantidade de elementos do vector.
+ */
 
 void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array calcula o logaritmo base 10 de cada um e em seguida imprime o seu logaritmo
 
@@ -327,6 +450,10 @@ void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array c
 
 //Imprime ajuda sobre o programa;
 //Entrada 7 no menu
+/**
+ * @brief Função que Imprime ajuda sobre o programa;
+ * 
+ */
 
 void ajuda(void){
 
