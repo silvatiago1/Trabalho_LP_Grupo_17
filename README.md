@@ -37,7 +37,7 @@ $ ./main.exe --help
 ```
 
 ### Help command after execution
-![Demo Animation]()
+![Demo Animation](https://github.com/silvatiago1/Trabalho_LP_Grupo_17/blob/main/menureadme.png)
 
 Press 7 to help be provided
 
