@@ -11,16 +11,15 @@ int main(int argc,char *argv[]){
         printf("Ajuda será disponibilizada em breve\n");
         
     }
-    int x=14;
-    int a[x], b[x];
-    int a2dim[x][x];
-    char op;
-    char op2='A';
+    int a[14], b[14]; ///vector a é o vector que é requerido inicialmente, o vector b é um vector suplementar
+    int a2dim[14][14]; ///matriz de 2 dimensões
+    char op; ///variável usada no menú geral 
+    char op2='A'; ///variável usada nos sub-menús
 
 
     printf("Seja bem-vindo!\n \n");
     printf("Indique as entradas de um vector de 14 posições para começar!\n");
-    formarVectorDim1(a,x);
+    formarVectorDim1(a,14);
     repeat:
     menu();
     scanf(" %c", &op);
@@ -61,10 +60,10 @@ int main(int argc,char *argv[]){
     
     case '3':
         printf("O seu array e as suas 13 permutações é:\n");
-        permutacao(a, x);
+        permutacao(a, 14);
         break;
     case '4':
-        printf("O produto interno dos dois vetores é %d.\n", newArray(a,x));
+        printf("O produto interno dos dois vetores é %d.\n", newArray(a,14));
         break;
     case '5':
         printf("Apresentação da decomposição em números primos dos números impares no vetor inicial\n");
@@ -94,7 +93,5 @@ int main(int argc,char *argv[]){
     }
     sair: 
         printf("\nAté breve!\n");
-
-
     return 0;
 }
