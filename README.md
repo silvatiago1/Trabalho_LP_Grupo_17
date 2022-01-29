@@ -38,6 +38,7 @@ $ ./main.exe --help
 
 ### Help command after execution
 In order to get help after execution, you need to press 7 when the menu appears.
+
 ![Demo Animation](https://github.com/silvatiago1/Trabalho_LP_Grupo_17/blob/main/menureadme.png)
 
 
