@@ -24,9 +24,9 @@ void \mbox{\hyperlink{functions-team-17_8c_abbef4512b5c05af468b79b1c41bb08f7}{du
 void \mbox{\hyperlink{functions-team-17_8c_ad16e5e62f3579a7048e6b981b172885e}{menu}} (void)
 \begin{DoxyCompactList}\small\item\em Menú geral de opções. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{functions-team-17_8c_aaa2ad443d57bec12a26904b2d0874eaa}{submenu1}} (void)
-\begin{DoxyCompactList}\small\item\em imprime um submenú \end{DoxyCompactList}\item 
+\item 
 void \mbox{\hyperlink{functions-team-17_8c_a31b9f295e84859f07a99603be0283ae7}{submenu2}} (void)
-\begin{DoxyCompactList}\small\item\em imprime o menú geral \end{DoxyCompactList}\item 
+\item 
 int \mbox{\hyperlink{functions-team-17_8c_aef16914c56ba5dcf2e099abded5dbec8}{random1\+Dim}} (int a\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Função que devolve um elemento ao acaso de um vetor a. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{functions-team-17_8c_a0809d66a12d95698d48466c9c5f2bba2}{min}} (int a\mbox{[}$\,$\mbox{]}, int x, int y, int z)
@@ -41,7 +41,7 @@ int \mbox{\hyperlink{functions-team-17_8c_a35a5043454038eec51456f980f871c62}{det
 \begin{DoxyCompactList}\small\item\em Função que determina o determinante de uma matriz. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{functions-team-17_8c_a12a84bafbe71ab4ce1d3e24b653bf710}{averagearray}} (int v\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Função que determina o valor médio de todos os elementos do array. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a4d2eb205d432113a806d9b2ee4999c41}{permutacao}} (int a\mbox{[}$\,$\mbox{]})
+void \mbox{\hyperlink{functions-team-17_8c_a124739795643b8035d2d70d997491766}{permutacao}} (int a\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Função que permite imprimir as permutações de um vector a. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{functions-team-17_8c_a8a4bb659b21724877c7b0bcbbf04826c}{new\+Array}} (int a\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Esta função lê um novo vector e faz o produto interno entre o vector lido e o vector inicial. \end{DoxyCompactList}\item 
@@ -66,7 +66,7 @@ void \mbox{\hyperlink{functions-team-17_8c_ac7c9e1438208537d4308112b49ea014c}{aj
 
 Função que Imprime ajuda sobre o programa;. 
 
-calcula e imprime o logaritmo de cada elemento do array.\mbox{\Hypertarget{functions-team-17_8c_a12a84bafbe71ab4ce1d3e24b653bf710}\label{functions-team-17_8c_a12a84bafbe71ab4ce1d3e24b653bf710}} 
+\mbox{\Hypertarget{functions-team-17_8c_a12a84bafbe71ab4ce1d3e24b653bf710}\label{functions-team-17_8c_a12a84bafbe71ab4ce1d3e24b653bf710}} 
 \index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!averagearray@{averagearray}}
 \index{averagearray@{averagearray}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
 \doxysubsubsection{\texorpdfstring{averagearray()}{averagearray()}}
@@ -75,8 +75,6 @@ calcula e imprime o logaritmo de cada elemento do array.\mbox{\Hypertarget{funct
 
 
 Função que determina o valor médio de todos os elementos do array. 
-
-imprime o array com metade dos elementos por ordem crescente
 
 
 \begin{DoxyParams}{Parameters}
@@ -97,8 +95,6 @@ Média de todos os elementos do vector (float).
 
 
 Função que determina o determinante de uma matriz. 
-
-função que devolve a multiplicação de todos os elementos de um array
 
 
 \begin{DoxyParams}{Parameters}
@@ -122,8 +118,6 @@ Retorna o determinante que foi calculado aquando da execução do programa (int)
 
 Função que duplica um dado array a de 1 dimensão. 
 
-função suplementar para formar arrays de 2 dimensões
-
 
 \begin{DoxyParams}{Parameters}
 {\em x} & Quantidade de elementos do vector a e b. \\
@@ -142,8 +136,6 @@ função suplementar para formar arrays de 2 dimensões
 
 
 Função que duplica um dado array a de 2 dimensões. 
-
-calcula o determinante de qualquer matriz quadrada
 
 
 \begin{DoxyParams}{Parameters}
@@ -209,8 +201,6 @@ Função que forma um vector de 1 dimensão.
 
 Função que forma um vector de 2 dimensões. 
 
-função suplementar para formar arrays de 1 dimensão
-
 
 \begin{DoxyParams}{Parameters}
 {\em y} & Número de colunas do vector. \\
@@ -230,8 +220,6 @@ função suplementar para formar arrays de 1 dimensão
 
 Função que calcula e imprime a decomposição em números primos de todos os números impares presentes no array. 
 
-função que retorna a média de todos os elementos de um array
-
 
 \begin{DoxyParams}{Parameters}
 {\em v} & Vector de 1 dimensão que é passado como argumento. \\
@@ -246,8 +234,6 @@ função que retorna a média de todos os elementos de um array
 
 
 Função que efetua o cálculo do logaritmo (base natural) de todos os elementos no vetor. 
-
-imprime uma matriz
 
 
 \begin{DoxyParams}{Parameters}
@@ -265,8 +251,6 @@ imprime uma matriz
 
 
 Esta função lê un novo vetor 1x14, realiza a sua transposta e multiplica-\/a pelo vetor inicial formando uma matriz 14x14. 
-
-imprime ajuda sobre o menu e o que cada entrada do mesmo faz.
 
 
 \begin{DoxyParams}{Parameters}
@@ -287,7 +271,7 @@ imprime ajuda sobre o menu e o que cada entrada do mesmo faz.
 
 Menú geral de opções. 
 
-função que imprime todos os elementos de um array que não são divisíveis por 3\mbox{\Hypertarget{functions-team-17_8c_a0809d66a12d95698d48466c9c5f2bba2}\label{functions-team-17_8c_a0809d66a12d95698d48466c9c5f2bba2}} 
+\mbox{\Hypertarget{functions-team-17_8c_a0809d66a12d95698d48466c9c5f2bba2}\label{functions-team-17_8c_a0809d66a12d95698d48466c9c5f2bba2}} 
 \index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!min@{min}}
 \index{min@{min}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
 \doxysubsubsection{\texorpdfstring{min()}{min()}}
@@ -296,8 +280,6 @@ função que imprime todos os elementos de um array que não são divisíveis po
 
 
 Função que permite localizar o elemento de menor valor. 
-
-função suplementar para imprimir arrays de uma dimensão
 
 
 \begin{DoxyParams}{Parameters}
@@ -323,8 +305,6 @@ Retorna o elemento minímo determinado (int).
 
 Esta função lê um novo vector e faz o produto interno entre o vector lido e o vector inicial. 
 
-função que forma uma matriz 14x14 que resulta da permutação de elementos de um array passado como argumento
-
 
 \begin{DoxyParams}{Parameters}
 {\em a} & Vector de 1 dimensão que é passado como argumento. \\
@@ -335,11 +315,11 @@ função que forma uma matriz 14x14 que resulta da permutação de elementos de 
 \begin{DoxyReturn}{Returns}
 Resultado do produto interno entre dois vectores (int). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{functions-team-17_8c_a4d2eb205d432113a806d9b2ee4999c41}\label{functions-team-17_8c_a4d2eb205d432113a806d9b2ee4999c41}} 
+\mbox{\Hypertarget{functions-team-17_8c_a124739795643b8035d2d70d997491766}\label{functions-team-17_8c_a124739795643b8035d2d70d997491766}} 
 \index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!permutacao@{permutacao}}
 \index{permutacao@{permutacao}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
 \doxysubsubsection{\texorpdfstring{permutacao()}{permutacao()}}
-{\footnotesize\ttfamily void permutacao (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void permutacao (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
 
 
@@ -360,8 +340,6 @@ Função que permite imprimir as permutações de um vector a.
 
 Função que imprime um dado vector a. 
 
-função que devolve elementos pseudo-\/random de um array
-
 
 \begin{DoxyParams}{Parameters}
 {\em a} & Vector de 1 dimensão em que os valores serão guardados. \\
@@ -378,8 +356,6 @@ função que devolve elementos pseudo-\/random de um array
 
 
 Função que imprime um dado vector a. 
-
-clona uma matriz
 
 
 \begin{DoxyParams}{Parameters}
@@ -400,8 +376,6 @@ clona uma matriz
 
 Função que devolve um elemento ao acaso de um vetor a. 
 
-função suplementar que permite duplicar arrays de 1 dimensão
-
 
 \begin{DoxyParams}{Parameters}
 {\em a} & Vector de 1 dimensão passado como argumento. \\
@@ -418,19 +392,11 @@ Retorna um elemento inteiro do vector (int).
 \doxysubsubsection{\texorpdfstring{submenu1()}{submenu1()}}
 {\footnotesize\ttfamily void submenu1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
-
-
-imprime um submenú 
-
 Menú usado aquando da opção 2 do menú geral.\mbox{\Hypertarget{functions-team-17_8c_a31b9f295e84859f07a99603be0283ae7}\label{functions-team-17_8c_a31b9f295e84859f07a99603be0283ae7}} 
 \index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!submenu2@{submenu2}}
 \index{submenu2@{submenu2}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
 \doxysubsubsection{\texorpdfstring{submenu2()}{submenu2()}}
 {\footnotesize\ttfamily void submenu2 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
-
-
-
-imprime o menú geral 
 
 Menú usado aquando da opção 6 do menú geral.\mbox{\Hypertarget{functions-team-17_8c_a539899b23f7e8b12d75f3835daf351a0}\label{functions-team-17_8c_a539899b23f7e8b12d75f3835daf351a0}} 
 \index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!task3@{task3}}
@@ -441,8 +407,6 @@ Menú usado aquando da opção 6 do menú geral.\mbox{\Hypertarget{functions-tea
 
 
 Função que permite meter por ordem crescente a primeira metade dos elementos do vector. 
-
-função suplementar para encontrar a primeira ocorrência de um elemento igual a w
 
 
 \begin{DoxyParams}{Parameters}
@@ -460,8 +424,6 @@ função suplementar para encontrar a primeira ocorrência de um elemento igual 
 
 
 Função imprime os valores que não são divisíveis por 3. 
-
-função que criar uma matriz por multiplicação vetorial de um novo vetor com o inicial
 
 
 \begin{DoxyParams}{Parameters}

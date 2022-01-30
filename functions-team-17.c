@@ -271,7 +271,7 @@ void task4(int a[], int x){
 int det(int x, int y, int B[x][y]){ //Determinante de uma matriz de ordem X
     int a[x][y];
     float r;
-    int w;
+    int w=1;
     duplicarMatriz(x, y, a, B);
 
     for(int i=0;i<x;i++){
@@ -316,15 +316,17 @@ float averagearray(int v[],int x)//Função que calcula a média de todos os val
  * 
  * @param a Vector de 1 dimensão a que é passado como argumento.
  */
-void permutacao(int a[])// Função que nos dá na 1ª linha o array original e nas outras 13 as suas permutações
+void permutacao(int a[], int x)// Função que nos dá na 1ª linha o array original e nas outras 13 as suas permutações
 {
     int aux;
-    for(int i = 1; i<14; i++)
+    formarVectorDim1(a, x);
+    print1dim(a, x);
+    for(int i = 1; i<x; i++)
     {
         aux = a[0];
         a[0] = a[i];
         a[i] = aux;
-        print1dim(a, 14);
+        print1dim(a, x);
     }
 }
 
@@ -370,6 +372,7 @@ void imparemprimos(int v[])
             printf("A decomposição em primo de %i é:",v[i]);
             
             int primo=2;
+
 
             while(v[i]>1)//Não há risco de multiplicarmos por números não primos pois estes mesmos são compostos por números primos,e caso um número não seja divisível pelos segundos então também não será pelos primeiros
             {
