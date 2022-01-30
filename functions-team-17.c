@@ -441,7 +441,7 @@ void matriz(int x, int a[x], int b[x][x])
  * @param x Quantidade de elementos do vector.
  */
 
-void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array calcula o logaritmo base 10 de cada um e em seguida imprime o seu logaritmo
+void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array calcula o logaritmo base e de cada um e em seguida imprime o seu logaritmo
 
     for (int i=0; i<x; i++){
         float log1;
