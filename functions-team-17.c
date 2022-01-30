@@ -358,6 +358,8 @@ int newArray(int a[], int x) //esta função lê um novo array, multiplica todos
  * @brief Função que calcula e imprime a decomposição em números primos de todos os números impares presentes no array
  * 
  * @param v Vector de 1 dimensão que é passado como argumento.
+ * 
+ * @details A função percorre todos os números do array, se um número não for par a função verifica se o número atualmente está maior que um, pois um é o único número que cumpre os requisitos para ser um número primo sem o ser; Após isso decompõe o número em nºs primos, Não há risco de multiplicar por números não primos pois estes mesmos são compostos por números primos
  */
 void imparemprimos(int v[])
 {   
@@ -369,19 +371,16 @@ void imparemprimos(int v[])
         {
             error=1;
 
-            printf("A decomposição em primo de %i é:",v[i]);
+            printf("A decomposição em primo x 1 de %i é:",v[i]);
             
             int primo=2;
 
 
-            while(v[i]>1)//Não há risco de multiplicarmos por números não primos pois estes mesmos são compostos por números primos,e caso um número não seja divisível pelos segundos então também não será pelos primeiros
+            while(v[i]>1)//
             {
                 while(v[i]%primo==0)
                 {
-                    printf("%i",primo);
-                    if(v[i]%primo==0){
-                        printf("x");
-                    }
+                    printf("%ix",primo);
                     v[i]=v[i]/primo;
                 }
                 primo ++;
