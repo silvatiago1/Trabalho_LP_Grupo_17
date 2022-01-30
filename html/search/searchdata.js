@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "adfilmnprst",
   1: "f",
   2: "adfilmnprst",
-  3: "fm"
+  3: "fmp"
 };
 
 var indexSectionNames =
