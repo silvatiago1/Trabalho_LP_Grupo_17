@@ -1,0 +1,11 @@
+@page teoria1 Determinante - Suporte Teórico
+
+O determinante de uma matriz é um valor escalar associado à mesma. Pode ter vários usos, como por exemplo, no cálculo de soluções num sistema linear.
+
+## Fórmula de cálculo de uma determinante
+
+A maneira que utilizada consiste na condensação, isto é, na transformação de uma matriz numa matriz triangular por meios de operações elementares às linhas da matriz. A operação elementar usada é do tipo Li-->Li+B.Lj, i!=j; pois esta operação elementar não modifica o o determinante:
+
+    | a d g |                       | l q r |
+    | b e h |======.......==========| 0 m p | = l x m x o
+    | c f i |     Li-->Li+BLj       | 0 0 o |

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MATRIX CALCULATOR: Produto Interno − Suporte Teórico</title>
+<title>MATRIX CALCULATOR: Determinante - Suporte Teórico</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,23 +66,16 @@ $(function() {
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Produto Interno − Suporte Teórico </div>  </div>
+<div class="title">Determinante - Suporte Teórico </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>O produto interno de dois vetores é a multiplicação de comprimentos de vetores alinhados numa mesma direção, é denotado normalmente por &lt;u,v&gt;.</p>
-<h2><a class="anchor" id="autotoc_md9"></a>
-Propriedades.</h2>
-<ul>
-<li>Comutatividade, ou seja, (u,v)=(v,u);</li>
-<li>Distributividade da soma, isto é, (u+v).c=(u,c)+(v,c) e c.(u+v)=(c,u)+(c,v);</li>
-<li>Linearidade, ou seja, seja k e w escalares, então a.(ku+wv)=k(a.u)+w(a.v).</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md10"></a>
-Fórmula de cálculo.</h2>
-<p>Como no trabalho, os vetores usados estão em forma de coordenadas, então foi utilizado o seguinte método:</p>
-<p>Seja u=(a1,a2,...,an) e v=(b1,b2,...,bn), então:</p>
-<p>&lt;u,v&gt;=a1 x b1 + a2 x b2 + ... + an x bn </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>O determinante de uma matriz é um valor escalar associado à mesma. Pode ter vários usos, como por exemplo, no cálculo de soluções num sistema linear.</p>
+<h2><a class="anchor" id="autotoc_md0"></a>
+Fórmula de cálculo de uma determinante</h2>
+<p>A maneira que utilizada consiste na condensação, isto é, na transformação de uma matriz numa matriz triangular por meios de operações elementares às linhas da matriz. A operação elementar usada é do tipo Li--&gt;Li+B.Lj, i!=j; pois esta operação elementar não modifica o o determinante: </p><pre class="fragment">| a d g |                       | l q r |
+| b e h |======.......==========| 0 m p | = l x m x o
+| c f i |     Li--&gt;Li+BLj       | 0 0 o |
+</pre> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
