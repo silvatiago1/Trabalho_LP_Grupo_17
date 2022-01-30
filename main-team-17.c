@@ -4,8 +4,11 @@
 #include<string.h>
 #include<stdlib.h>
 /**
- * @file functions-team-17.c
+ * @file main-team-17.c
+ * @brief Ficheiro principal 
+ * 
  */
+
 
 int main(int argc,char *argv[]){
     system("clear");

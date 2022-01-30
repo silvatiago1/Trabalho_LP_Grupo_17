@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['det_33',['det',['../functions-team-17_8c.html#a35a5043454038eec51456f980f871c62',1,'functions-team-17.c']]],
-  ['duplicararray1dim_34',['duplicarArray1dim',['../functions-team-17_8c.html#af0a673724c08110902ea8fe6a017395f',1,'functions-team-17.c']]],
-  ['duplicarmatriz_35',['duplicarMatriz',['../functions-team-17_8c.html#abbef4512b5c05af468b79b1c41bb08f7',1,'functions-team-17.c']]]
+  ['det_38',['det',['../functions-team-17_8c.html#a35a5043454038eec51456f980f871c62',1,'det(int x, int y, int B[x][y]):&#160;functions-team-17.c'],['../functions-team-17_8h.html#a35a5043454038eec51456f980f871c62',1,'det(int x, int y, int B[x][y]):&#160;functions-team-17.c']]],
+  ['duplicararray1dim_39',['duplicarArray1dim',['../functions-team-17_8c.html#af0a673724c08110902ea8fe6a017395f',1,'duplicarArray1dim(int x, int a[], int b[]):&#160;functions-team-17.c'],['../functions-team-17_8h.html#af0a673724c08110902ea8fe6a017395f',1,'duplicarArray1dim(int x, int a[], int b[]):&#160;functions-team-17.c']]],
+  ['duplicarmatriz_40',['duplicarMatriz',['../functions-team-17_8c.html#abbef4512b5c05af468b79b1c41bb08f7',1,'duplicarMatriz(int x, int y, int a[x][y], int b[x][y]):&#160;functions-team-17.c'],['../functions-team-17_8h.html#abbef4512b5c05af468b79b1c41bb08f7',1,'duplicarMatriz(int x, int y, int a[x][y], int b[x][y]):&#160;functions-team-17.c']]]
 ];

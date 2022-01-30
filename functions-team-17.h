@@ -1,10 +1,16 @@
+/**
+ * @file functions-team-17.h
+ * @brief Este ficheiro contém as assinaturas de todas as funções que foram utilizadas no programa.
+ * 
+ */
+
 void formarVectorDim1(int a[], int x); //função suplementar para formar arrays de 1 dimensão
 void formarVectorDim2(int y, int x, int a[][y]); //função suplementar para formar arrays de 2 dimensões
 void duplicarArray1dim(int x, int a[], int b[]); //função suplementar que permite duplicar arrays de 1 dimensão
 int random1Dim(int a[], int x); //função que devolve elementos pseudo-random de um array
 void print1dim(int a[], int x); //função suplementar para imprimir arrays de uma dimensão
 int min(int a[], int x, int y, int z); //idevolve o valor minimo no intervalo y a z-1
-int find(int a[], int x, int y, int z, int w); //função suplementar para encontrar a primeira ocorrência de um elemento igual a w
+int findv(int a[], int x, int y, int z, int w); //função suplementar para encontrar a primeira ocorrência de um elemento igual a w
 void task3(int a[], int x); //omprime o array com metade dos elementos por ordem crescente
 float averagearray(int v[],int x);//função que retorna a média de todos os elementos de um array
 void imparemprimos(int v[]); //função que imprime os elementos de um array decompostos em números primos

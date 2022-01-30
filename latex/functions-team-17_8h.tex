@@ -1,74 +1,70 @@
-\hypertarget{functions-team-17_8c}{}\doxysection{functions-\/team-\/17.c File Reference}
-\label{functions-team-17_8c}\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\hypertarget{functions-team-17_8h}{}\doxysection{functions-\/team-\/17.h File Reference}
+\label{functions-team-17_8h}\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 
 
-Este ficheiro contém todas as funções que foram utilizadas no programa.  
+Este ficheiro contém as assinaturas de todas as funções que foram utilizadas no programa.  
 
 
-{\ttfamily \#include $<$stdio.\+h$>$}\newline
-{\ttfamily \#include $<$stdlib.\+h$>$}\newline
-{\ttfamily \#include $<$time.\+h$>$}\newline
-{\ttfamily \#include $<$math.\+h$>$}\newline
-Include dependency graph for functions-\/team-\/17.c\+:
+This graph shows which files directly or indirectly include this file\+:
 % FIG 0
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{functions-team-17_8c_a3d5ba3d3b74b0fd66ffac91bc82a7e82}{formar\+Vector\+Dim1}} (int a\mbox{[}$\,$\mbox{]}, int x)
+void \mbox{\hyperlink{functions-team-17_8h_a3d5ba3d3b74b0fd66ffac91bc82a7e82}{formar\+Vector\+Dim1}} (int a\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Função que forma um vector de 1 dimensão. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a3c63133954a921703ffad043ea7ec969}{formar\+Vector\+Dim2}} (int y, int x, int a\mbox{[}$\,$\mbox{]}\mbox{[}y\mbox{]})
+void \mbox{\hyperlink{functions-team-17_8h_a3c63133954a921703ffad043ea7ec969}{formar\+Vector\+Dim2}} (int y, int x, int a\mbox{[}$\,$\mbox{]}\mbox{[}y\mbox{]})
 \begin{DoxyCompactList}\small\item\em Função que forma um vector de 2 dimensões. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a4ff2a44292446d19e7aa2e0a9ee3ec3a}{print1dim}} (int a\mbox{[}$\,$\mbox{]}, int x)
-\begin{DoxyCompactList}\small\item\em Função que imprime um dado vector a. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_ad2936a48d1655171b853a731877cba03}{print2}} (int x, int y, int a\mbox{[}x\mbox{]}\mbox{[}y\mbox{]})
-\begin{DoxyCompactList}\small\item\em Função que imprime um dado vector a. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_af0a673724c08110902ea8fe6a017395f}{duplicar\+Array1dim}} (int x, int a\mbox{[}$\,$\mbox{]}, int b\mbox{[}$\,$\mbox{]})
+void \mbox{\hyperlink{functions-team-17_8h_af0a673724c08110902ea8fe6a017395f}{duplicar\+Array1dim}} (int x, int a\mbox{[}$\,$\mbox{]}, int b\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em Função que duplica um dado array a de 1 dimensão. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_abbef4512b5c05af468b79b1c41bb08f7}{duplicar\+Matriz}} (int x, int y, int a\mbox{[}x\mbox{]}\mbox{[}y\mbox{]}, int b\mbox{[}x\mbox{]}\mbox{[}y\mbox{]})
-\begin{DoxyCompactList}\small\item\em Função que duplica um dado array a de 2 dimensões. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_ad16e5e62f3579a7048e6b981b172885e}{menu}} (void)
-\begin{DoxyCompactList}\small\item\em Menú geral de opções. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_aaa2ad443d57bec12a26904b2d0874eaa}{submenu1}} (void)
-\item 
-void \mbox{\hyperlink{functions-team-17_8c_a31b9f295e84859f07a99603be0283ae7}{submenu2}} (void)
-\item 
-int \mbox{\hyperlink{functions-team-17_8c_aef16914c56ba5dcf2e099abded5dbec8}{random1\+Dim}} (int a\mbox{[}$\,$\mbox{]}, int x)
+int \mbox{\hyperlink{functions-team-17_8h_aef16914c56ba5dcf2e099abded5dbec8}{random1\+Dim}} (int a\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Função que devolve um elemento ao acaso de um vetor a. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{functions-team-17_8c_a0809d66a12d95698d48466c9c5f2bba2}{min}} (int a\mbox{[}$\,$\mbox{]}, int x, int y, int z)
+void \mbox{\hyperlink{functions-team-17_8h_a4ff2a44292446d19e7aa2e0a9ee3ec3a}{print1dim}} (int a\mbox{[}$\,$\mbox{]}, int x)
+\begin{DoxyCompactList}\small\item\em Função que imprime um dado vector a. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions-team-17_8h_a0809d66a12d95698d48466c9c5f2bba2}{min}} (int a\mbox{[}$\,$\mbox{]}, int x, int y, int z)
 \begin{DoxyCompactList}\small\item\em Função que permite localizar o elemento de menor valor. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{functions-team-17_8c_a30ab987b75cdc75a3912fe10b6fa8e78}{findv}} (int a\mbox{[}$\,$\mbox{]}, int x, int y, int z, int w)
+int \mbox{\hyperlink{functions-team-17_8h_a30ab987b75cdc75a3912fe10b6fa8e78}{findv}} (int a\mbox{[}$\,$\mbox{]}, int x, int y, int z, int w)
 \begin{DoxyCompactList}\small\item\em Função que identifica a posição do primeiro elemento do vector igual a um valor. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a539899b23f7e8b12d75f3835daf351a0}{task3}} (int a\mbox{[}$\,$\mbox{]}, int x)
+void \mbox{\hyperlink{functions-team-17_8h_a539899b23f7e8b12d75f3835daf351a0}{task3}} (int a\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Função que permite meter por ordem crescente a primeira metade dos elementos do vector. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a70bb2c96f09e7906c83053be035071ad}{task4}} (int a\mbox{[}$\,$\mbox{]}, int x)
-\begin{DoxyCompactList}\small\item\em Função imprime os valores que não são divisíveis por 3. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{functions-team-17_8c_a35a5043454038eec51456f980f871c62}{det}} (int x, int y, int B\mbox{[}x\mbox{]}\mbox{[}y\mbox{]})
-\begin{DoxyCompactList}\small\item\em Função que determina o determinante de uma matriz. \end{DoxyCompactList}\item 
-float \mbox{\hyperlink{functions-team-17_8c_a12a84bafbe71ab4ce1d3e24b653bf710}{averagearray}} (int v\mbox{[}$\,$\mbox{]}, int x)
+float \mbox{\hyperlink{functions-team-17_8h_a12a84bafbe71ab4ce1d3e24b653bf710}{averagearray}} (int v\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Função que determina o valor médio de todos os elementos do array. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a124739795643b8035d2d70d997491766}{permutacao}} (int a\mbox{[}$\,$\mbox{]}, int x)
-\begin{DoxyCompactList}\small\item\em Função que permite imprimir as permutações de um vector a. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{functions-team-17_8c_a8a4bb659b21724877c7b0bcbbf04826c}{new\+Array}} (int a\mbox{[}$\,$\mbox{]}, int x)
-\begin{DoxyCompactList}\small\item\em Esta função lê um novo vector e faz o produto interno entre o vector lido e o vector inicial. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a98c38ae3c539462cd27aff94a5e585ee}{imparemprimos}} (int v\mbox{[}$\,$\mbox{]})
+void \mbox{\hyperlink{functions-team-17_8h_a98c38ae3c539462cd27aff94a5e585ee}{imparemprimos}} (int v\mbox{[}$\,$\mbox{]})
 \begin{DoxyCompactList}\small\item\em Função que calcula e imprime a decomposição em números primos de todos os números impares presentes no array. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a115df5d240157a221be3fc222d493b53}{matriz}} (int x, int a\mbox{[}x\mbox{]}, int b\mbox{[}x\mbox{]}\mbox{[}x\mbox{]})
-\begin{DoxyCompactList}\small\item\em Esta função lê un novo vetor 1x14, realiza a sua transposta e multiplica-\/a pelo vetor inicial formando uma matriz 14x14. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_a5fc0252d1693d64e858c66a98f2af278}{logaritmo}} (int a\mbox{[}$\,$\mbox{]}, int x)
+void \mbox{\hyperlink{functions-team-17_8h_a124739795643b8035d2d70d997491766}{permutacao}} (int a\mbox{[}$\,$\mbox{]}, int x)
+\begin{DoxyCompactList}\small\item\em Função que permite imprimir as permutações de um vector a. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions-team-17_8h_a8a4bb659b21724877c7b0bcbbf04826c}{new\+Array}} (int a\mbox{[}$\,$\mbox{]}, int x)
+\begin{DoxyCompactList}\small\item\em Esta função lê um novo vector e faz o produto interno entre o vector lido e o vector inicial. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions-team-17_8h_a35a5043454038eec51456f980f871c62}{det}} (int x, int y, int B\mbox{[}x\mbox{]}\mbox{[}y\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função que determina o determinante de uma matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-17_8h_abbef4512b5c05af468b79b1c41bb08f7}{duplicar\+Matriz}} (int x, int y, int a\mbox{[}x\mbox{]}\mbox{[}y\mbox{]}, int b\mbox{[}x\mbox{]}\mbox{[}y\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função que duplica um dado array a de 2 dimensões. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-17_8h_ad2936a48d1655171b853a731877cba03}{print2}} (int x, int y, int a\mbox{[}x\mbox{]}\mbox{[}y\mbox{]})
+\begin{DoxyCompactList}\small\item\em Função que imprime um dado vector a. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-17_8h_a5fc0252d1693d64e858c66a98f2af278}{logaritmo}} (int a\mbox{[}$\,$\mbox{]}, int x)
 \begin{DoxyCompactList}\small\item\em Função que efetua o cálculo do logaritmo (base natural) de todos os elementos no vetor. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{functions-team-17_8c_ac7c9e1438208537d4308112b49ea014c}{ajuda}} (void)
-\begin{DoxyCompactList}\small\item\em Função que Imprime ajuda sobre o programa;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{functions-team-17_8h_ac7c9e1438208537d4308112b49ea014c}{ajuda}} (void)
+\begin{DoxyCompactList}\small\item\em Função que Imprime ajuda sobre o programa;. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-17_8h_a115df5d240157a221be3fc222d493b53}{matriz}} (int x, int a\mbox{[}x\mbox{]}, int b\mbox{[}x\mbox{]}\mbox{[}x\mbox{]})
+\begin{DoxyCompactList}\small\item\em Esta função lê un novo vetor 1x14, realiza a sua transposta e multiplica-\/a pelo vetor inicial formando uma matriz 14x14. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-17_8h_a70bb2c96f09e7906c83053be035071ad}{task4}} (int a\mbox{[}$\,$\mbox{]}, int x)
+\begin{DoxyCompactList}\small\item\em Função imprime os valores que não são divisíveis por 3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-17_8h_ad16e5e62f3579a7048e6b981b172885e}{menu}} (void)
+\begin{DoxyCompactList}\small\item\em Menú geral de opções. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions-team-17_8h_a31b9f295e84859f07a99603be0283ae7}{submenu2}} (void)
+\item 
+void \mbox{\hyperlink{functions-team-17_8h_aaa2ad443d57bec12a26904b2d0874eaa}{submenu1}} (void)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Este ficheiro contém todas as funções que foram utilizadas no programa. 
+Este ficheiro contém as assinaturas de todas as funções que foram utilizadas no programa. 
 
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{functions-team-17_8c_ac7c9e1438208537d4308112b49ea014c}\label{functions-team-17_8c_ac7c9e1438208537d4308112b49ea014c}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!ajuda@{ajuda}}
-\index{ajuda@{ajuda}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_ac7c9e1438208537d4308112b49ea014c}\label{functions-team-17_8h_ac7c9e1438208537d4308112b49ea014c}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!ajuda@{ajuda}}
+\index{ajuda@{ajuda}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{ajuda()}{ajuda()}}
 {\footnotesize\ttfamily void ajuda (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
@@ -76,9 +72,9 @@ Este ficheiro contém todas as funções que foram utilizadas no programa.
 
 Função que Imprime ajuda sobre o programa;. 
 
-\mbox{\Hypertarget{functions-team-17_8c_a12a84bafbe71ab4ce1d3e24b653bf710}\label{functions-team-17_8c_a12a84bafbe71ab4ce1d3e24b653bf710}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!averagearray@{averagearray}}
-\index{averagearray@{averagearray}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a12a84bafbe71ab4ce1d3e24b653bf710}\label{functions-team-17_8h_a12a84bafbe71ab4ce1d3e24b653bf710}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!averagearray@{averagearray}}
+\index{averagearray@{averagearray}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{averagearray()}{averagearray()}}
 {\footnotesize\ttfamily float averagearray (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
@@ -96,9 +92,9 @@ Função que determina o valor médio de todos os elementos do array.
 \begin{DoxyReturn}{Returns}
 Média de todos os elementos do vector (float). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{functions-team-17_8c_a35a5043454038eec51456f980f871c62}\label{functions-team-17_8c_a35a5043454038eec51456f980f871c62}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!det@{det}}
-\index{det@{det}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a35a5043454038eec51456f980f871c62}\label{functions-team-17_8h_a35a5043454038eec51456f980f871c62}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!det@{det}}
+\index{det@{det}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{det()}{det()}}
 {\footnotesize\ttfamily int det (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{B\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} }\end{DoxyParamCaption})}
 
@@ -118,9 +114,9 @@ Função que determina o determinante de uma matriz.
 \begin{DoxyReturn}{Returns}
 Retorna o determinante que foi calculado aquando da execução do programa (int). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{functions-team-17_8c_af0a673724c08110902ea8fe6a017395f}\label{functions-team-17_8c_af0a673724c08110902ea8fe6a017395f}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!duplicarArray1dim@{duplicarArray1dim}}
-\index{duplicarArray1dim@{duplicarArray1dim}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_af0a673724c08110902ea8fe6a017395f}\label{functions-team-17_8h_af0a673724c08110902ea8fe6a017395f}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!duplicarArray1dim@{duplicarArray1dim}}
+\index{duplicarArray1dim@{duplicarArray1dim}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{duplicarArray1dim()}{duplicarArray1dim()}}
 {\footnotesize\ttfamily void duplicar\+Array1dim (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{b\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
@@ -137,9 +133,9 @@ Função que duplica um dado array a de 1 dimensão.
 {\em b} & Vector ao qual os valores de a serão copiados. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_abbef4512b5c05af468b79b1c41bb08f7}\label{functions-team-17_8c_abbef4512b5c05af468b79b1c41bb08f7}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!duplicarMatriz@{duplicarMatriz}}
-\index{duplicarMatriz@{duplicarMatriz}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_abbef4512b5c05af468b79b1c41bb08f7}\label{functions-team-17_8h_abbef4512b5c05af468b79b1c41bb08f7}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!duplicarMatriz@{duplicarMatriz}}
+\index{duplicarMatriz@{duplicarMatriz}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{duplicarMatriz()}{duplicarMatriz()}}
 {\footnotesize\ttfamily void duplicar\+Matriz (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{a\mbox{[}x\mbox{]}\mbox{[}y\mbox{]},  }\item[{int}]{b\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} }\end{DoxyParamCaption})}
 
@@ -158,9 +154,9 @@ Função que duplica um dado array a de 2 dimensões.
 {\em b} & Vector de duas dimensões que já tem os valores guardados. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_a30ab987b75cdc75a3912fe10b6fa8e78}\label{functions-team-17_8c_a30ab987b75cdc75a3912fe10b6fa8e78}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!findv@{findv}}
-\index{findv@{findv}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a30ab987b75cdc75a3912fe10b6fa8e78}\label{functions-team-17_8h_a30ab987b75cdc75a3912fe10b6fa8e78}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!findv@{findv}}
+\index{findv@{findv}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{findv()}{findv()}}
 {\footnotesize\ttfamily int findv (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z,  }\item[{int}]{w }\end{DoxyParamCaption})}
 
@@ -184,9 +180,9 @@ Função que identifica a posição do primeiro elemento do vector igual a um va
 \begin{DoxyReturn}{Returns}
 Retorna a primeira ocorrência do elemento do vector igual a w se não encontrar devolve -\/1 (int). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{functions-team-17_8c_a3d5ba3d3b74b0fd66ffac91bc82a7e82}\label{functions-team-17_8c_a3d5ba3d3b74b0fd66ffac91bc82a7e82}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!formarVectorDim1@{formarVectorDim1}}
-\index{formarVectorDim1@{formarVectorDim1}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a3d5ba3d3b74b0fd66ffac91bc82a7e82}\label{functions-team-17_8h_a3d5ba3d3b74b0fd66ffac91bc82a7e82}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!formarVectorDim1@{formarVectorDim1}}
+\index{formarVectorDim1@{formarVectorDim1}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{formarVectorDim1()}{formarVectorDim1()}}
 {\footnotesize\ttfamily void formar\+Vector\+Dim1 (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
@@ -201,9 +197,9 @@ Função que forma um vector de 1 dimensão.
 {\em x} & Quantidade de elementos do vector a. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_a3c63133954a921703ffad043ea7ec969}\label{functions-team-17_8c_a3c63133954a921703ffad043ea7ec969}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!formarVectorDim2@{formarVectorDim2}}
-\index{formarVectorDim2@{formarVectorDim2}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a3c63133954a921703ffad043ea7ec969}\label{functions-team-17_8h_a3c63133954a921703ffad043ea7ec969}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!formarVectorDim2@{formarVectorDim2}}
+\index{formarVectorDim2@{formarVectorDim2}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{formarVectorDim2()}{formarVectorDim2()}}
 {\footnotesize\ttfamily void formar\+Vector\+Dim2 (\begin{DoxyParamCaption}\item[{int}]{y,  }\item[{int}]{x,  }\item[{int}]{a\mbox{[}$\,$\mbox{]}\mbox{[}y\mbox{]} }\end{DoxyParamCaption})}
 
@@ -220,9 +216,9 @@ Função que forma um vector de 2 dimensões.
 {\em a} & Vector de duas dimensões onde serão guardados valores. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_a98c38ae3c539462cd27aff94a5e585ee}\label{functions-team-17_8c_a98c38ae3c539462cd27aff94a5e585ee}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!imparemprimos@{imparemprimos}}
-\index{imparemprimos@{imparemprimos}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a98c38ae3c539462cd27aff94a5e585ee}\label{functions-team-17_8h_a98c38ae3c539462cd27aff94a5e585ee}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!imparemprimos@{imparemprimos}}
+\index{imparemprimos@{imparemprimos}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{imparemprimos()}{imparemprimos()}}
 {\footnotesize\ttfamily void imparemprimos (\begin{DoxyParamCaption}\item[{int}]{v\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
@@ -235,9 +231,9 @@ Função que calcula e imprime a decomposição em números primos de todos os n
 {\em v} & Vector de 1 dimensão que é passado como argumento.\\
 \hline
 \end{DoxyParams}
-A função percorre todos os números do array, se um número não for par a função verifica se o número atualmente está maior que um, pois um é o único número que cumpre os requisitos para ser um número primo sem o ser; Após isso decompõe o número em nºs primos, Não há risco de multiplicar por números não primos pois estes mesmos são compostos por números primos \mbox{\Hypertarget{functions-team-17_8c_a5fc0252d1693d64e858c66a98f2af278}\label{functions-team-17_8c_a5fc0252d1693d64e858c66a98f2af278}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!logaritmo@{logaritmo}}
-\index{logaritmo@{logaritmo}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+A função percorre todos os números do array, se um número não for par a função verifica se o número atualmente está maior que um, pois um é o único número que cumpre os requisitos para ser um número primo sem o ser; Após isso decompõe o número em nºs primos, Não há risco de multiplicar por números não primos pois estes mesmos são compostos por números primos \mbox{\Hypertarget{functions-team-17_8h_a5fc0252d1693d64e858c66a98f2af278}\label{functions-team-17_8h_a5fc0252d1693d64e858c66a98f2af278}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!logaritmo@{logaritmo}}
+\index{logaritmo@{logaritmo}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{logaritmo()}{logaritmo()}}
 {\footnotesize\ttfamily void logaritmo (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
@@ -252,9 +248,9 @@ Função que efetua o cálculo do logaritmo (base natural) de todos os elementos
 {\em x} & Quantidade de elementos do vector. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_a115df5d240157a221be3fc222d493b53}\label{functions-team-17_8c_a115df5d240157a221be3fc222d493b53}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!matriz@{matriz}}
-\index{matriz@{matriz}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a115df5d240157a221be3fc222d493b53}\label{functions-team-17_8h_a115df5d240157a221be3fc222d493b53}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!matriz@{matriz}}
+\index{matriz@{matriz}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{matriz()}{matriz()}}
 {\footnotesize\ttfamily void matriz (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{a\mbox{[}x\mbox{]},  }\item[{int}]{b\mbox{[}x\mbox{]}\mbox{[}x\mbox{]} }\end{DoxyParamCaption})}
 
@@ -271,9 +267,9 @@ Esta função lê un novo vetor 1x14, realiza a sua transposta e multiplica-\/a 
 {\em b} & Vector de 2 dimensões que resultará da multiplicação vetorial entre dois vetores. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_ad16e5e62f3579a7048e6b981b172885e}\label{functions-team-17_8c_ad16e5e62f3579a7048e6b981b172885e}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!menu@{menu}}
-\index{menu@{menu}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_ad16e5e62f3579a7048e6b981b172885e}\label{functions-team-17_8h_ad16e5e62f3579a7048e6b981b172885e}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!menu@{menu}}
+\index{menu@{menu}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{menu()}{menu()}}
 {\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
@@ -281,9 +277,9 @@ Esta função lê un novo vetor 1x14, realiza a sua transposta e multiplica-\/a 
 
 Menú geral de opções. 
 
-\mbox{\Hypertarget{functions-team-17_8c_a0809d66a12d95698d48466c9c5f2bba2}\label{functions-team-17_8c_a0809d66a12d95698d48466c9c5f2bba2}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!min@{min}}
-\index{min@{min}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a0809d66a12d95698d48466c9c5f2bba2}\label{functions-team-17_8h_a0809d66a12d95698d48466c9c5f2bba2}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!min@{min}}
+\index{min@{min}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{min()}{min()}}
 {\footnotesize\ttfamily int min (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{z }\end{DoxyParamCaption})}
 
@@ -305,9 +301,9 @@ Função que permite localizar o elemento de menor valor.
 \begin{DoxyReturn}{Returns}
 Retorna o elemento minímo determinado (int). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{functions-team-17_8c_a8a4bb659b21724877c7b0bcbbf04826c}\label{functions-team-17_8c_a8a4bb659b21724877c7b0bcbbf04826c}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!newArray@{newArray}}
-\index{newArray@{newArray}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a8a4bb659b21724877c7b0bcbbf04826c}\label{functions-team-17_8h_a8a4bb659b21724877c7b0bcbbf04826c}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!newArray@{newArray}}
+\index{newArray@{newArray}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{newArray()}{newArray()}}
 {\footnotesize\ttfamily int new\+Array (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
@@ -325,9 +321,9 @@ Esta função lê um novo vector e faz o produto interno entre o vector lido e o
 \begin{DoxyReturn}{Returns}
 Resultado do produto interno entre dois vectores (int). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{functions-team-17_8c_a124739795643b8035d2d70d997491766}\label{functions-team-17_8c_a124739795643b8035d2d70d997491766}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!permutacao@{permutacao}}
-\index{permutacao@{permutacao}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a124739795643b8035d2d70d997491766}\label{functions-team-17_8h_a124739795643b8035d2d70d997491766}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!permutacao@{permutacao}}
+\index{permutacao@{permutacao}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{permutacao()}{permutacao()}}
 {\footnotesize\ttfamily void permutacao (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
@@ -340,9 +336,9 @@ Função que permite imprimir as permutações de um vector a.
 {\em a} & Vector de 1 dimensão a que é passado como argumento. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_a4ff2a44292446d19e7aa2e0a9ee3ec3a}\label{functions-team-17_8c_a4ff2a44292446d19e7aa2e0a9ee3ec3a}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!print1dim@{print1dim}}
-\index{print1dim@{print1dim}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a4ff2a44292446d19e7aa2e0a9ee3ec3a}\label{functions-team-17_8h_a4ff2a44292446d19e7aa2e0a9ee3ec3a}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!print1dim@{print1dim}}
+\index{print1dim@{print1dim}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{print1dim()}{print1dim()}}
 {\footnotesize\ttfamily void print1dim (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
@@ -357,9 +353,9 @@ Função que imprime um dado vector a.
 {\em x} & Quantidade de elementos do vector a. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_ad2936a48d1655171b853a731877cba03}\label{functions-team-17_8c_ad2936a48d1655171b853a731877cba03}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!print2@{print2}}
-\index{print2@{print2}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_ad2936a48d1655171b853a731877cba03}\label{functions-team-17_8h_ad2936a48d1655171b853a731877cba03}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!print2@{print2}}
+\index{print2@{print2}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{print2()}{print2()}}
 {\footnotesize\ttfamily void print2 (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{a\mbox{[}x\mbox{]}\mbox{[}y\mbox{]} }\end{DoxyParamCaption})}
 
@@ -376,9 +372,9 @@ Função que imprime um dado vector a.
 {\em y} & Números de linhas do vector. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_aef16914c56ba5dcf2e099abded5dbec8}\label{functions-team-17_8c_aef16914c56ba5dcf2e099abded5dbec8}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!random1Dim@{random1Dim}}
-\index{random1Dim@{random1Dim}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_aef16914c56ba5dcf2e099abded5dbec8}\label{functions-team-17_8h_aef16914c56ba5dcf2e099abded5dbec8}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!random1Dim@{random1Dim}}
+\index{random1Dim@{random1Dim}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{random1Dim()}{random1Dim()}}
 {\footnotesize\ttfamily int random1\+Dim (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
@@ -396,21 +392,21 @@ Função que devolve um elemento ao acaso de um vetor a.
 \begin{DoxyReturn}{Returns}
 Retorna um elemento inteiro do vector (int). 
 \end{DoxyReturn}
-\mbox{\Hypertarget{functions-team-17_8c_aaa2ad443d57bec12a26904b2d0874eaa}\label{functions-team-17_8c_aaa2ad443d57bec12a26904b2d0874eaa}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!submenu1@{submenu1}}
-\index{submenu1@{submenu1}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_aaa2ad443d57bec12a26904b2d0874eaa}\label{functions-team-17_8h_aaa2ad443d57bec12a26904b2d0874eaa}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!submenu1@{submenu1}}
+\index{submenu1@{submenu1}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{submenu1()}{submenu1()}}
 {\footnotesize\ttfamily void submenu1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
-Menú usado aquando da opção 2 do menú geral.\mbox{\Hypertarget{functions-team-17_8c_a31b9f295e84859f07a99603be0283ae7}\label{functions-team-17_8c_a31b9f295e84859f07a99603be0283ae7}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!submenu2@{submenu2}}
-\index{submenu2@{submenu2}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+Menú usado aquando da opção 2 do menú geral.\mbox{\Hypertarget{functions-team-17_8h_a31b9f295e84859f07a99603be0283ae7}\label{functions-team-17_8h_a31b9f295e84859f07a99603be0283ae7}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!submenu2@{submenu2}}
+\index{submenu2@{submenu2}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{submenu2()}{submenu2()}}
 {\footnotesize\ttfamily void submenu2 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
-Menú usado aquando da opção 6 do menú geral.\mbox{\Hypertarget{functions-team-17_8c_a539899b23f7e8b12d75f3835daf351a0}\label{functions-team-17_8c_a539899b23f7e8b12d75f3835daf351a0}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!task3@{task3}}
-\index{task3@{task3}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+Menú usado aquando da opção 6 do menú geral.\mbox{\Hypertarget{functions-team-17_8h_a539899b23f7e8b12d75f3835daf351a0}\label{functions-team-17_8h_a539899b23f7e8b12d75f3835daf351a0}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!task3@{task3}}
+\index{task3@{task3}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{task3()}{task3()}}
 {\footnotesize\ttfamily void task3 (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 
@@ -425,9 +421,9 @@ Função que permite meter por ordem crescente a primeira metade dos elementos d
 {\em x} & Quantidade de elementos do vector a. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_a70bb2c96f09e7906c83053be035071ad}\label{functions-team-17_8c_a70bb2c96f09e7906c83053be035071ad}} 
-\index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!task4@{task4}}
-\index{task4@{task4}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
+\mbox{\Hypertarget{functions-team-17_8h_a70bb2c96f09e7906c83053be035071ad}\label{functions-team-17_8h_a70bb2c96f09e7906c83053be035071ad}} 
+\index{functions-\/team-\/17.h@{functions-\/team-\/17.h}!task4@{task4}}
+\index{task4@{task4}!functions-\/team-\/17.h@{functions-\/team-\/17.h}}
 \doxysubsubsection{\texorpdfstring{task4()}{task4()}}
 {\footnotesize\ttfamily void task4 (\begin{DoxyParamCaption}\item[{int}]{a\mbox{[}$\,$\mbox{]},  }\item[{int}]{x }\end{DoxyParamCaption})}
 

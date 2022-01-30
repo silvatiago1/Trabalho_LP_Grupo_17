@@ -2,6 +2,11 @@
 #include<stdlib.h>
 #include<time.h>
 #include<math.h>
+/**
+ * @file functions-team-17.c
+ * @brief Este ficheiro contém todas as funções que foram utilizadas no programa.
+ * 
+ */
 
 /*funções básicas */
 /**
