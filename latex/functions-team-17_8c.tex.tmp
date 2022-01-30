@@ -143,9 +143,9 @@ Função que duplica um dado array a de 2 dimensões.
 \hline
 {\em y} & Números de linhas dos vectores. \\
 \hline
-{\em a} & Vector de duas dimensões que já tem os valores guardados. \\
+{\em a} & Vector de duas dimensões onde serão guardados valores. \\
 \hline
-{\em b} & Vector de duas dimensões onde serão guardados valores. \\
+{\em b} & Vector de duas dimensões que já tem os valores guardados. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{functions-team-17_8c_a30ab987b75cdc75a3912fe10b6fa8e78}\label{functions-team-17_8c_a30ab987b75cdc75a3912fe10b6fa8e78}} 
@@ -222,10 +222,10 @@ Função que calcula e imprime a decomposição em números primos de todos os n
 
 
 \begin{DoxyParams}{Parameters}
-{\em v} & Vector de 1 dimensão que é passado como argumento. \\
+{\em v} & Vector de 1 dimensão que é passado como argumento.\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{functions-team-17_8c_a5fc0252d1693d64e858c66a98f2af278}\label{functions-team-17_8c_a5fc0252d1693d64e858c66a98f2af278}} 
+A função percorre todos os números do array, se um número não for par a função verifica se o número atualmente está maior que um, pois um é o único número que cumpre os requisitos para ser um número primo sem o ser; Após isso decompõe o número em nºs primos, Não há risco de multiplicar por números não primos pois estes mesmos são compostos por números primos \mbox{\Hypertarget{functions-team-17_8c_a5fc0252d1693d64e858c66a98f2af278}\label{functions-team-17_8c_a5fc0252d1693d64e858c66a98f2af278}} 
 \index{functions-\/team-\/17.c@{functions-\/team-\/17.c}!logaritmo@{logaritmo}}
 \index{logaritmo@{logaritmo}!functions-\/team-\/17.c@{functions-\/team-\/17.c}}
 \doxysubsubsection{\texorpdfstring{logaritmo()}{logaritmo()}}
