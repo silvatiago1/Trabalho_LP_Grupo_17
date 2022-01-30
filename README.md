@@ -50,4 +50,3 @@ In order to get help after execution, you need to press 7 when the menu appears.
 - Gonçalo Costa
 - João Raínha
 - Gabriel Maria
-
