@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MATRIX CALCULATOR: Matrix Calculator</title>
+<title>MATRIX CALCULATOR: Decomposição de um número em primos - Suporte Teórico</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -59,52 +59,37 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="index.html">Matrix Calculator</a></li><li class="navelem"><a class="el" href="suporte.html">Teoria associada à implementação das funções</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Matrix Calculator </div>  </div>
+<div class="title">Decomposição de um número em primos - Suporte Teórico </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Esta aplicação permite, a partir de um vetor de 14 posições inteiras, calcular/retornar os seguintes resultados:</p><ol type="1">
-<li>Retorna um elemento aleatório de um vetor;</li>
-<li>Cálculo do logaritmo natural de cada elemento do vetor;</li>
-<li>Retorna o vetor com a primeira metade dos valores ordenados em ordem crescente;</li>
-<li>Retorna elementos do vetor que não são divisíveis por 3;</li>
-<li>Cálculo do valor médio de todos os elementos do vetor;</li>
-<li>Formação de uma matriz quadrada (14x14) resultante de permutações dos elementos do vetor inicial;</li>
-<li>Produto interno de dois vetores (vetor inicial e o que será solicitado durante a operação);</li>
-<li>Apresentação da decomposição dos elementos ímpares do vetor inicial em números primos;</li>
-<li>Produto cruzado entre o vetor inicial e outro que será solicitado;</li>
-<li>Cálculo do determinante da referida Matriz;</li>
-<li>A ajuda será fornecida pela flag &ndash;help em tempo de execução e a ajuda também será fornecida no menu sob o número 7;</li>
-</ol>
-<h1><a class="anchor" id="autotoc_md5"></a>
-Instalação</h1>
-<p>Siga os passos abaixo para poder usar o programa.</p>
-<div class="fragment"><div class="line">$ git clone git@github.com:/silvatiago1/Trabalho_LP_Grupo_17.git</div>
-<div class="line">$ cd Trabalho_LP_Grupo_17</div>
-<div class="line">$ make</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
-Utilização</h1>
-<h2><a class="anchor" id="autotoc_md7"></a>
-Comandos de Ajuda</h2>
-<div class="fragment"><div class="line">$ make help</div>
-</div><!-- fragment --><p>ou </p><div class="fragment"><div class="line">$ ./main.exe --help</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
-Comando de ajuda após a execução</h2>
-<p>Para obter ajuda após a execução, você precisa pressionar 7 quando o menú aparecer.</p>
-<p><img src="https://github.com/silvatiago1/Trabalho_LP_Grupo_17/blob/main/menureadme.png" alt="menu" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md9"></a>
-Autores</h1>
-<ul>
-<li>Artur Putyato</li>
-<li>Tiago Silva</li>
-<li>Tiago Borges</li>
-<li>Gonçalo Costa</li>
-<li>João Raínha</li>
-<li>Gabriel Maria </li>
-</ul>
-</div></div><!-- contents -->
+<div class="textblock"><pre class="fragment"> ____________________________________________________________________________________________________________
+|                                                                                                            |
+| Teorema Fundamental da Aritmética                                                                          |
+| Seja n um número positivo. Então existem números primos p1 ≤ p2 ≤ ... ≤ pm, tais que n=p1 x p2 x ... x pm. |
+|____________________________________________________________________________________________________________|
+</pre><h2><a class="anchor" id="autotoc_md3"></a>
+Método de decomposição de números ímpares em números primos.</h2>
+<p>Um número ímpar deve ser dividido pelos números ímpares, e dividir esses restos da divisão até não der mais. Devido ao facto de o valor máximo possível é 27, então serão apenas usados os primeiros valores ímpares, pois são também primos.</p>
+<p>Seja o conjunto <em>P</em>={2,3,5,7,9,11,...}, e um número n:</p>
+<pre class="fragment">   não
+ -------se n é divisível por 3 &lt;-------
+ |              | sim                 |
+ |              v                     |
+ |   resto de n/3 e guarda-se em n ----
+ |
+ -------&gt;se n é divisível por 5&lt;-------
+      não /     | sim                 |
+ ---------      v                     |
+ |   resto de n/5 e guarda-se em n ----
+ v etc.
+</pre> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['task3_26',['task3',['../functions-team-17_8c.html#a539899b23f7e8b12d75f3835daf351a0',1,'functions-team-17.c']]],
-  ['task4_27',['task4',['../functions-team-17_8c.html#a70bb2c96f09e7906c83053be035071ad',1,'functions-team-17.c']]]
+  ['teoria_20associada_20à_20implementação_20das_20funções_27',['Teoria associada à implementação das funções',['../suporte.html',1,'index']]],
+  ['task3_28',['task3',['../functions-team-17_8c.html#a539899b23f7e8b12d75f3835daf351a0',1,'functions-team-17.c']]],
+  ['task4_29',['task4',['../functions-team-17_8c.html#a70bb2c96f09e7906c83053be035071ad',1,'functions-team-17.c']]]
 ];

@@ -39,7 +39,7 @@ $ ./main.exe --help
 ### Comando de ajuda após a execução
 Para obter ajuda após a execução, você precisa pressionar 7 quando o menú aparecer.
 
-![Demo Animation](https://github.com/silvatiago1/Trabalho_LP_Grupo_17/blob/main/menureadme.png)
+![menu](https://github.com/silvatiago1/Trabalho_LP_Grupo_17/blob/main/menureadme.png)
 
 
 

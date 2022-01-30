@@ -8,7 +8,4 @@ Esta é a página principal da documentação do projecto, cujos conteúdos pode
 @subpage workflow
 
 
-@subpage teoria
-
-
-@subpage teoria1
+@subpage suporte
