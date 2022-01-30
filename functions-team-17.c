@@ -444,10 +444,10 @@ void matriz(int x, int a[x], int b[x][x])
 void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array calcula o logaritmo base 10 de cada um e em seguida imprime o seu logaritmo
 
     for (int i=0; i<x; i++){
-        float log;
-        log = log10(a[i]);
+        float log1;
+        log1 = log(a[i]);
 
-        printf("log10(%d) = %.3f ", a[i], log);
+        printf("ln(%d) = %.3f ", a[i], log);
         if(i<x-1){
             printf(", ");
         }
