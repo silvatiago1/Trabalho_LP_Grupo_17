@@ -447,7 +447,7 @@ void logaritmo(int a[], int x){ //Esta função lê todos o elementos do array c
         float log1;
         log1 = log(a[i]);
 
-        printf("ln(%d) = %.3f ", a[i], log);
+        printf("ln(%d) = %.3f ", a[i], log1);
         if(i<x-1){
             printf(", ");
         }
