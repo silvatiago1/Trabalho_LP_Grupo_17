@@ -80,8 +80,8 @@ void duplicarArray1dim(int x, int a[], int b[]){
  * 
  * @param x Números de linhas dos vectores.
  * @param y Números de linhas dos vectores.
- * @param a Vector de duas dimensões que já tem os valores guardados.
- * @param b Vector de duas dimensões onde serão guardados valores.
+ * @param a Vector de duas dimensões onde serão guardados valores.
+ * @param b Vector de duas dimensões que já tem os valores guardados. 
  */
 
 void duplicarMatriz(int x, int y, int a[x][y], int b[x][y]){
