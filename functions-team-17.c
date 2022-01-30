@@ -345,7 +345,7 @@ int newArray(int a[], int x) //esta função lê um novo array, multiplica todos
 
     int produtointerno = 0; 
 
-    for (int i = 1; i < x; i++)
+    for (int i = 0; i < x; i++)
     {
         produtointerno += n[i]*a[i];
     }
