@@ -11,7 +11,7 @@ int main(int argc,char *argv[]){
     system("clear");
 
     if(argc == 2 && strcmp(argv[1], "--help")==0){
-        printf("Ajuda será disponibilizada em breve\n");
+        printf("O programa consiste em pedir ao utilizador 14 números entre 8 e 27 e este vai guardá-los num vetor. De seguida, e de acordo com a opção escolhida \ndas apresentadas no menú, o programa irá utilizar o vetor em diversas operações e devolverá ao utilizador o valor pretendido.\nNo menú encontra-se, também, disponível uma página detalhada de ajuda na qual está explícito o objetivo de cada opção do próprio menú.\n");
         
     }
     int a[14], b[14]; ///vector a é o vector que é requerido inicialmente, o vector b é um vector suplementar
